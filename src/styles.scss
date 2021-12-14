@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/animate.css/animate.min.css';
+
+@font-face {
+    font-family: 'Clarendon Condensed BT';
+    src: url('./assets/fonts/CaviarDreams.ttf');
+}
+
+
+* {
+    font-family: 'Clarendon Condensed BT';
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.deskonly {
+    display: none !important;
+}
+.cellonly {
+	display: none !important;
+}
+.deskonlyflex {
+	display: none !important;
+}
+@media (min-width: 992px) {
+     .deskonly {
+        display: block !important;
+    }
+}
+@media (max-width: 992px) {
+    .cellonly {
+        display: block !important;
+    }
+}
+@media (min-width: 992px) {
+    .deskonlyflex {
+        display: flex !important;
+    }
+}

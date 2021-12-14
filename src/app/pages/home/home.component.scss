@@ -1,0 +1,42 @@
+.container {
+    color: white;
+
+    section {
+        height: 100vh;
+    }
+
+    .row-title {
+        height: 88vh;
+    }
+
+    .row-chev {
+        height: 12vh;
+    }
+
+    .title {
+       font-size: 4rem;
+    }
+
+    .icon-arrow-down {
+        font-size: 3rem;
+    }
+
+    .section-title {
+        border-bottom: 1px solid white;
+    }
+
+    .section {
+        padding-top: 100px;
+    }
+
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.7);
+    a {
+        text-transform: uppercase;
+        margin: 0 1rem;
+        font-weight: bold;
+        color: white;
+    }
+}

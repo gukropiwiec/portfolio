@@ -1,0 +1,46 @@
+<nav class="navbar fixed-top navbar-expand navbar-dark justify-content-center deskonlyflex">
+    <div class="" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-intro')}">
+            <a class="nav-link cursor-pointer" (click)="goToSection('section-intro')">Intro</a>
+          </li>
+          <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-projects')}">
+            <a class="nav-link cursor-pointer" (click)="goToSection('section-projects')">Projects</a>
+          </li>
+          <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-skills')}">
+            <a class="nav-link cursor-pointer" (click)="goToSection('section-skills')">Skills</a>
+          </li>
+          <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-contact')}">
+            <a class="nav-link cursor-pointer" (click)="goToSection('section-contact')">Contact</a>
+          </li>
+        </ul>
+    </div>
+</nav>
+<div class="container justify-content-center">
+    <!-- INTRO SECTION -->
+    <section id="section-intro">
+        <div class="row row-title">
+            <div class="col align-self-center text-center animate__animated animate__fadeInDown">
+                <h1 class="title">Gustavo Kropiwiec</h1>
+                <h2 class="subtitle">Software Engineer</h2>
+            </div>
+        </div>
+        <div class="row row-chev">
+            <div class="col text-center animate__animated animate__fadeInDown animate__infinite animate__slow" id="chev-animation" (click)="goToSection('section-projects')">
+                <fa-icon [icon]="faChevronDown" class="icon-arrow-down cursor-pointer"></fa-icon>
+            </div>
+        </div>
+    </section>
+    <!-- PROJECTS SECTION -->
+    <section id="section-projects" class="mt-4 section">
+        <h1 class="section-title">Projects</h1>
+    </section>
+    <!-- SKILLS SECTION -->
+    <section id="section-skills" class="mt-4 section">
+        <h1 class="section-title">My Skills</h1>
+    </section>
+    <!-- CONTACT SECTION -->
+    <section id="section-contact" class="mt-4 section">
+        <h1 class="section-title">Contact me!</h1>
+    </section>
+</div>
