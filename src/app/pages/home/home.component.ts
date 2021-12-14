@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
@@ -10,13 +11,21 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 export class HomeComponent implements OnInit {
   public faChevronDown = faChevronDown;
   public activeNav = 'section-intro';
+  public lang = localStorage.getItem('lang') || 'en-US';
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private translateS: TranslateService) { }
 
   ngOnInit(): void {
+    this.translateS.use(this.lang);
   }
 
   goToSection(section: string) {
     document.getElementById(section)?.scrollIntoView();
+  }
+
+  changeLanguage(lang: string) {
+    this.translateS.use(lang);
+    this.lang = lang;
+    localStorage.setItem('lang', lang);
   }
 }

@@ -1,20 +1,24 @@
 <nav class="navbar fixed-top navbar-expand navbar-dark justify-content-center deskonlyflex">
-    <div class="" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-intro')}">
+    <ul class="navbar-nav mx-auto">
+        <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-intro')}">
             <a class="nav-link cursor-pointer" (click)="goToSection('section-intro')">Intro</a>
-          </li>
-          <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-projects')}">
-            <a class="nav-link cursor-pointer" (click)="goToSection('section-projects')">Projects</a>
-          </li>
-          <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-skills')}">
-            <a class="nav-link cursor-pointer" (click)="goToSection('section-skills')">Skills</a>
-          </li>
-          <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-contact')}">
-            <a class="nav-link cursor-pointer" (click)="goToSection('section-contact')">Contact</a>
-          </li>
-        </ul>
-    </div>
+        </li>
+        <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-projects')}">
+            <a class="nav-link cursor-pointer" (click)="goToSection('section-projects')">{{ 'Projects' | translate }}</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-skills')}">
+            <a class="nav-link cursor-pointer" (click)="goToSection('section-skills')">{{ 'Skills' | translate }}</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-about')}">
+            <a class="nav-link cursor-pointer" (click)="goToSection('section-about')">{{ 'About' | translate }}</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-contact')}">
+            <a class="nav-link cursor-pointer" (click)="goToSection('section-contact')">{{ 'Contact' | translate }}</a>
+        </li>
+    </ul>
+    <img class="lang-flag mx-1 cursor-pointer" [ngClass]="{'active-lang': lang == 'en-US' }" (click)="changeLanguage('en-US')" src="../../../assets/languages/en-US.svg" alt="US flag">
+    <img class="lang-flag mx-1 cursor-pointer" [ngClass]="{'active-lang': lang == 'en-GB' }" (click)="changeLanguage('en-GB')" src="../../../assets/languages/en-GB.svg" alt="UK flag">
+    <img class="lang-flag ms-1 me-5 cursor-pointer" [ngClass]="{'active-lang': lang == 'pt-BR' }" (click)="changeLanguage('pt-BR')" src="../../../assets/languages/pt-BR.svg" alt="BR flag">
 </nav>
 <div class="container justify-content-center">
     <!-- INTRO SECTION -->
@@ -22,7 +26,7 @@
         <div class="row row-title">
             <div class="col align-self-center text-center animate__animated animate__fadeInDown">
                 <h1 class="title">Gustavo Kropiwiec</h1>
-                <h2 class="subtitle">Software Engineer</h2>
+                <h2 class="subtitle">{{ 'Software Engineer' | translate }}</h2>
             </div>
         </div>
         <div class="row row-chev">
@@ -32,15 +36,20 @@
         </div>
     </section>
     <!-- PROJECTS SECTION -->
-    <section id="section-projects" class="mt-4 section">
-        <h1 class="section-title">Projects</h1>
+    <section id="section-projects" class="mt-2 section">
+        <h1 class="section-title">{{ 'Projects' | translate }}</h1>
     </section>
     <!-- SKILLS SECTION -->
-    <section id="section-skills" class="mt-4 section">
-        <h1 class="section-title">My Skills</h1>
+    <section id="section-skills" class="mt-2 section">
+        <h1 class="section-title">{{ 'My Skills' | translate }}</h1>
+    </section>
+    <!-- ABOUT SECTION -->
+    <section id="section-about" class="mt-2 section">
+        <h1 class="section-title">{{ 'About' | translate }}</h1>
+        <app-section-about></app-section-about>
     </section>
     <!-- CONTACT SECTION -->
-    <section id="section-contact" class="mt-4 section">
-        <h1 class="section-title">Contact me!</h1>
+    <section id="section-contact" class="mt-2 section">
+        <h1 class="section-title">{{ 'Contact me!' | translate }}</h1>
     </section>
 </div>

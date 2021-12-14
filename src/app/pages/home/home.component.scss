@@ -26,7 +26,7 @@
     }
 
     .section {
-        padding-top: 100px;
+        padding-top: 75px;
     }
 
 }
@@ -39,4 +39,14 @@
         font-weight: bold;
         color: white;
     }
+}
+
+.lang-flag {
+    max-width: 30px;
+    max-height: 18px;
+    opacity: 0.3;
+}
+
+.active-lang {
+    opacity: 1;
 }
