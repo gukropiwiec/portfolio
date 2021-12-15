@@ -21,5 +21,11 @@
     "About Esal 1": "Desenvolvi o aplicativo Esalcorp, que é usado para gerenciamento interno do estoque da empresa, usando Ionic com Angular.",
     "About Esal 2": "Desenvolvi o e-commerce da Esalflores e Esalpet, que faz conexão com a API da empresa. O site alcança milhares de usuários mensais.",
     "About Korp 1": "Desenvolvi e realizei manutenção do sistema ERP, SQL queries e testes unitários.",
-    "About Korp 2": "Como estagiário, minha principal tarefa era escrever SQL queries e garantir a boa funcionalide do sistema."
+    "About Korp 2": "Como estagiário, minha principal tarefa era escrever SQL queries e garantir a boa funcionalide do sistema.",
+    "Have some questions? Get in touch!": "Tem alguma pergunta? Entre em contato!",
+    "Name": "Nome",
+    "Subject": "Assunto",
+    "Message": "Mensagem",
+    "Send message!": "Enviar mensagem!",
+    "Oops! Sorry, functionality in development.": "Ops! Desculpa, funcionalidade em desenvolvimento."
 }
