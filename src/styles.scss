@@ -5,9 +5,13 @@
     src: url('./assets/fonts/CaviarDreams.ttf');
 }
 
-
 * {
     font-family: 'Clarendon Condensed BT';
+}
+
+:root {
+    --purple: #9c5dff;
+    --dbm: #109b90;
 }
 
 .cursor-pointer {
@@ -41,11 +45,15 @@
 
 .card-section {
     background: rgba(253, 253, 253, 0.089) !important;
-    height: 90% !important;
+    min-height: 80vh !important;
     width: 100% !important;
 }
 
 // TEXT COLORS
 .text-purple {
-    color: #9c5dff;
+    color: var(--purple);
+}
+
+.text-dbm {
+    color: var(--dbm);
 }

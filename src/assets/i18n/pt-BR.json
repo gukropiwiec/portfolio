@@ -6,5 +6,20 @@
     "My Skills": "Skills",
     "About": "Sobre",
     "Summary" : "Resumo",
-    "Experience": "Experiência"
+    "Experience": "Experiência",
+    "About summary": "Com quase 2 anos de experiência em Angular, atuei no desenvolvimento do e-commerce de uma grande floricultura que conta com milhares de visitas diárias, além do desenvolvimento de aplicativos utilizando Ionic. <br> Atualmente estou trabalhando em um projeto de telefonia PABX e realizando a manutenção do e-commerce que desenvolvi. <br> Gosto muito de estar atualizado e sempre buscando novos desafios e aprendizados.",
+    "at": "na",
+    "Frontend Web Developer": "Desenvolvedor Web Pleno",
+    "Fullstack Web Developer": "Desenvolvedor Web Fullstack",
+    "Junior Developer": "Desenvolvedor Júnior",
+    "May": "Maio",
+    "August": "Agosto",
+    "November": "Novembro",
+    "Present": "Hoje",
+    "About DBM 1": "Atualmente estou trabalhando como desenvolvedor front-end na criação de um novo sistema PBX.",
+    "About DBM 2": "Tecnologias usadas: Angular com Bootstrap",
+    "About Esal 1": "Desenvolvi o aplicativo Esalcorp, que é usado para gerenciamento interno do estoque da empresa, usando Ionic com Angular.",
+    "About Esal 2": "Desenvolvi o e-commerce da Esalflores e Esalpet, que faz conexão com a API da empresa. O site alcança milhares de usuários mensais.",
+    "About Korp 1": "Desenvolvi e realizei manutenção do sistema ERP, SQL queries e testes unitários.",
+    "About Korp 2": "Como estagiário, minha principal tarefa era escrever SQL queries e garantir a boa funcionalide do sistema."
 }
