@@ -1,5 +1,68 @@
 <div class="card card-section">
     <div class="card-body">
-        <h2>Let's have a chat!</h2>
+        <h2>{{ 'Have some questions? Get in touch!' | translate }}</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row row-contact">
+                    <div class="col-sm-4 col-md-3 col-lg-2">
+                        <img src="assets/icons/whatsapp-48.png">
+                    </div>
+                    <div class="col align-self-center">
+                        <span class="fw-bold">Whatsapp</span> 
+                        <br>
+                        <span>+55 41 99853-2258</span>
+                    </div>
+                </div>
+                <div class="row row-contact">
+                    <div class="col-sm-4 col-md-3 col-lg-2">
+                        <img src="assets/icons/linkedin-48.png">
+                    </div>
+                    <div class="col align-self-center">
+                        <span class="fw-bold">Linkedin</span> 
+                        <a href="https://linkedin.com/in/gustavo-kropiwiec/?locale=en_US" target="_blank" rel="noopener noreferrer"><fa-icon class="ms-2" [icon]="faExternalLinkAlt"></fa-icon></a>
+                    </div>
+                </div>
+                <div class="row row-contact">
+                    <div class="col-sm-4 col-md-3 col-lg-2">
+                        <img src="assets/icons/github-48.png">
+                    </div>
+                    <div class="col align-self-center">
+                        <span class="fw-bold">Github</span> 
+                        <a href="https://github.com/gukropiwiec" target="_blank" rel="noopener noreferrer"><fa-icon class="ms-2" [icon]="faExternalLinkAlt"></fa-icon></a>
+                    </div>
+                </div>
+                <div class="row row-contact">
+                    <div class="col-sm-4 col-md-3 col-lg-2">
+                        <img src="assets/icons/mail-48.png">
+                    </div>
+                    <div class="col align-self-center">
+                        <span class="fw-bold">Email</span> 
+                        <br>
+                        <span>gustavosk17@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <form class="mt-5">
+                    <div class="form-floating my-3">
+                        <input type="text" class="form-control" id="name" placeholder="{{ 'Name' | translate }}">
+                        <label for="name">{{ 'Name' | translate }}</label>
+                    </div>
+                    <div class="form-floating my-3">
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating my-3">
+                        <input type="text" class="form-control" id="subject" placeholder="{{ 'Subject' | translate }}">
+                        <label for="subject">{{ 'Subject' | translate }}</label>
+                    </div>
+                    <div class="form-floating my-3">
+                        <textarea class="form-control" id="message" placeholder="{{ 'Message' | translate }}" style="height: 20vh"></textarea>
+                        <label for="message">{{ 'Message' | translate }}</label>
+                    </div>
+                    <button type="button" class="btn btn-lg btn-success" (click)="sendFormEmail()">{{ 'Send message!' | translate }}</button>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
