@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faChevronCircleDown } from '@fortawesome/free-solid-svg-icons';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -10,6 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HomeComponent implements OnInit {
   public faChevronDown = faChevronDown;
+  public faChevronCircleDown = faChevronCircleDown;
   public activeNav = 'section-intro';
   public lang = localStorage.getItem('lang') || 'en-US';
 
