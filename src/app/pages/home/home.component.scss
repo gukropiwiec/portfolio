@@ -33,10 +33,15 @@
 
 .navbar {
     background: rgba(0, 0, 0, 0.7);
+
     a {
         text-transform: uppercase;
         margin: 0 1rem;
         color: white;
+    }
+    
+    .center-nav {
+        margin-left: 10rem;
     }
 }
 
