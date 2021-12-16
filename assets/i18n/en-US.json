@@ -1,9 +1,11 @@
 {
-    "About summary": "Working with web development since 2019, I developed apps using Ionic with Angular and an e-commerce website, which has thounsands of users per month.<br>I'm currently working on a PBX project and maintaining the e-commerce I developed. <br> I'm always looking to improve my skills and coding, and up for new challenges.",
-    "About DBM 1": "I have been working as the lead front-end developer to create a new PBX system.",
-    "About DBM 2": "Front-end technologies used: Angular with Bootstrap.",
-    "About Esal 1": "Developed the Esalcorp app, which is used to manage the company’s internal inventory, using Ionic framework with Angular.",
-    "About Esal 2": "Developed Esalflores e-commerce website, which connects with the company’s ERP api. The website reaches thousands of users per month.",
-    "About Korp 1": "I developed and ensured maintenance of the ERP system, SQL queries and Unit Tests.",
-    "About Korp 2": "As an intern, my main task was to build SQL queries and guarantee the good functionality of the program."
+    "AboutDescription": {
+        "summary": "Working with web development since 2019, I developed apps using Ionic with Angular and an e-commerce website, which has thounsands of users per month.<br>I'm currently working on a PBX project and maintaining the e-commerce I developed. <br> I'm always looking to improve my skills and coding, and up for new challenges.",
+        "DBM1": "I have been working as the lead front-end developer to create a new PBX system.",
+        "DBM2": "Front-end technologies used: Angular with Bootstrap.",
+        "Esal1": "Developed the Esalcorp app, which is used to manage the company’s internal inventory, using Ionic framework with Angular.",
+        "Esal2": "Developed Esalflores e-commerce website, which connects with the company’s ERP api. The website reaches thousands of users per month.",
+        "Korp1": "I developed and ensured maintenance of the ERP system, SQL queries and Unit Tests.",
+        "Korp2": "As an intern, my main task was to build SQL queries and guarantee the good functionality of the program."
+    }
 }
