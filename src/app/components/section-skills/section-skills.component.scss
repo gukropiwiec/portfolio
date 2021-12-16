@@ -1,0 +1,39 @@
+.progress {
+    --width-span: 110px;
+
+    height: 30px;
+    background: transparent;
+    margin-top: 10px;
+
+    .progress-bar {
+        border: 1px solid rgba(255, 255, 255, 0.342);
+    }
+
+    span {
+        min-width: var(--width-span);
+    }
+    
+    .prog-90 {
+        width: calc((100% - var(--width-span))*0.9);
+    }
+
+    .prog-85 {
+        width: calc((100% - var(--width-span))*0.85);
+    }
+
+    .prog-75 {
+        width: calc((100% - var(--width-span))*0.75);
+    }
+
+    .prog-70 {
+        width: calc((100% - var(--width-span))*0.70);
+    }
+
+    .prog-50 {
+        width: calc((100% - var(--width-span))*0.5);
+    }
+}
+
+.img-skills {
+    width: 58px;
+}

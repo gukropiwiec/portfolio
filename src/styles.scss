@@ -11,7 +11,17 @@
 
 :root {
     --purple: #9c5dff;
+    --purple-alpha: #9b5dff9a;
     --dbm: #109b90;
+    --angular: #dd0031;
+    --bootstrap: #7952b3;
+    --html: #e96228;
+    --javascript: #efd81d;
+    --css: #2862e9;
+    --php: #7377ad;
+    --node: #89c34b;
+    --ionic: #4586f7;
+    --gray-alpha: #bfd9ff69;
 }
 
 .cursor-pointer {
@@ -49,6 +59,10 @@
     width: 100% !important;
 }
 
+span, li {
+    font-size: 1.4rem;
+}
+
 // TEXT COLORS
 .text-purple {
     color: var(--purple);
@@ -58,6 +72,43 @@
     color: var(--dbm);
 }
 
-span, li {
-    font-size: 1.4rem;
+.text-angular {
+    color: var(--angular);
+}
+
+.text-bootstrap {
+    color: var(--bootstrap);
+}
+
+.text-html {
+    color: var(--html);
+}
+
+.text-javascript {
+    color: var(--javascript);
+}
+
+.text-css {
+    color: var(--css);
+}
+
+.text-php {
+    color: var(--php);
+}
+
+.text-node {
+    color: var(--node);
+}
+
+.text-ionic {
+    color: var(--ionic);
+}
+
+// BACKGROUNDS
+.bg-purple-alpha {
+    background-color: var(--purple-alpha) !important;
+}
+
+.bg-gray-alpha {
+    background-color: var(--gray-alpha) !important;
 }

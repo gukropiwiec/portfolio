@@ -12,6 +12,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { SectionAboutComponent } from './components/section-about/section-about.component';
 import { SectionContactComponent } from './components/section-contact/section-contact.component';
+import { SectionSkillsComponent } from './components/section-skills/section-skills.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
@@ -22,7 +23,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     HomeComponent,
     SectionAboutComponent,
-    SectionContactComponent
+    SectionContactComponent,
+    SectionSkillsComponent
   ],
   imports: [
     BrowserModule,
