@@ -13,6 +13,11 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { SectionAboutComponent } from './components/section-about/section-about.component';
 import { SectionContactComponent } from './components/section-contact/section-contact.component';
 import { SectionSkillsComponent } from './components/section-skills/section-skills.component';
+import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { SectionProjectsComponent } from './components/section-projects/section-projects.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
@@ -24,7 +29,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeComponent,
     SectionAboutComponent,
     SectionContactComponent,
-    SectionSkillsComponent
+    SectionSkillsComponent,
+    CarouselComponent,
+    SectionProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +46,10 @@ export function HttpLoaderFactory(http: HttpClient) {
           deps: [HttpClient]
       },
       defaultLanguage: 'en-US'
-  })
+    }),
+    RouterModule,
+    BrowserAnimationsModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent],
