@@ -4,14 +4,14 @@
 
 @media (min-width: 992px) {
     .project-item-wrapper {
-        .row-icons {
+        .row-icons, .row-techs {
             opacity: 0;
             transition: opacity .3s;
         }
     }
     
     .project-item-wrapper:hover {
-        .row-icons {
+        .row-icons, .row-techs {
             opacity: 1;
         }
     }

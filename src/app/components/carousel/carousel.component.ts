@@ -1,22 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { faExternalLinkAlt, faCode, faInfo } from '@fortawesome/free-solid-svg-icons';
+import { Slide } from 'src/app/models/slide.interface';
+
+declare const bootstrap: any;
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss']
 })
-export class CarouselComponent implements OnInit {
-  private srcPath = 'assets/images/';
+export class CarouselComponent implements OnInit, AfterViewInit {
+  @Input() slides: Slide[] = [];
+
   public faExternalLinkAlt = faExternalLinkAlt;
   public faCode = faCode;
   public faInfo = faInfo;
-  public slides = [
-    { src: this.srcPath + 'orion.png', alt: 'Slide 1', title: 'Slide 1'},
-    { src: this.srcPath + 'orion.png', alt: 'Slide 2', title: 'Slide 2'},
-    { src: this.srcPath + 'orion.png', alt: 'Slide 3', title: 'Slide 3'}
-  ];
 
   carouselOptions: OwlOptions = {
     loop: true,
@@ -53,6 +52,28 @@ export class CarouselComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    
+  }
+  
+  ngAfterViewInit(): void {
+    this.enableTooltips();
+  }
+
+  enableTooltips() {
+    setTimeout(() => {
+      const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      tooltipTriggerList.map((tooltipTriggerEl) => {
+        new bootstrap.Tooltip(tooltipTriggerEl, {
+          container: 'body',
+          offset: '0,3'
+        });
+      });  
+    });
+  }
+
+  openLink(href: string | undefined) {
+    if (!href) {
+      return;
+    }
+    window.open(href, '_blank');
   }
 }
