@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt, faCode, faInfo } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-carousel',
@@ -8,13 +8,14 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent implements OnInit {
-  private srcPath = 'assets/icons/';
-  public faChevronLeft = faChevronLeft;
-  public faChevronRight = faChevronRight;
+  private srcPath = 'assets/images/';
+  public faExternalLinkAlt = faExternalLinkAlt;
+  public faCode = faCode;
+  public faInfo = faInfo;
   public slides = [
-    { src: this.srcPath + 'mail-48.png', alt: 'Slide 1', title: 'Slide 1'},
-    { src: this.srcPath + 'github-48.png', alt: 'Slide 2', title: 'Slide 2'},
-    { src: this.srcPath + 'learn-60.png', alt: 'Slide 3', title: 'Slide 3'}
+    { src: this.srcPath + 'orion.png', alt: 'Slide 1', title: 'Slide 1'},
+    { src: this.srcPath + 'orion.png', alt: 'Slide 2', title: 'Slide 2'},
+    { src: this.srcPath + 'orion.png', alt: 'Slide 3', title: 'Slide 3'}
   ];
 
   carouselOptions: OwlOptions = {
@@ -30,6 +31,7 @@ export class CarouselComponent implements OnInit {
     autoplayHoverPause: true,
     autoplayMouseleaveTimeout: 1000,
     autoplayTimeout: 4000,
+    margin: 10,
     responsive: {
       0: {
         items: 1
@@ -51,5 +53,6 @@ export class CarouselComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 }

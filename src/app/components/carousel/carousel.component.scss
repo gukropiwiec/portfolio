@@ -1,0 +1,19 @@
+.btn-project-item {
+    width: 40px;
+}
+
+@media (min-width: 992px) {
+    .project-item-wrapper {
+        .row-icons {
+            opacity: 0;
+            transition: opacity .3s;
+        }
+    }
+    
+    .project-item-wrapper:hover {
+        .row-icons {
+            opacity: 1;
+        }
+    }
+}
+
