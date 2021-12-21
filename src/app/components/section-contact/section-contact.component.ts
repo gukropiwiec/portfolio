@@ -15,7 +15,7 @@ export class SectionContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  sendFormEmail() {
+  sendFormEmail(): void {
     this.translateS.get('Oops! Sorry, functionality in development.').subscribe(res => {
       alert(res);
     });

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { faChevronDown, faChevronCircleDown } from '@fortawesome/free-solid-svg-icons';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 
@@ -11,12 +10,12 @@ declare const bootstrap: any;
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  public faChevronDown = faChevronDown;
-  public faChevronCircleDown = faChevronCircleDown;
-  public activeNav = 'section-intro';
-  public lang = localStorage.getItem('lang') || 'en-US';
+  activeNav = 'section-intro';
+  faChevronCircleDown = faChevronCircleDown;
+  faChevronDown = faChevronDown;
+  lang = localStorage.getItem('lang') || 'en-US';
 
-  constructor(private router: Router, private translateS: TranslateService) { }
+  constructor(private translateS: TranslateService) { }
 
   ngOnInit(): void {
     this.translateS.use(this.lang);
@@ -28,17 +27,17 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  goToSection(section: string) {
+  goToSection(section: string): void {
     document.getElementById(section)?.scrollIntoView();
   }
 
-  changeLanguage(lang: string) {
+  changeLanguage(lang: string): void {
     this.translateS.use(lang);
     this.lang = lang;
     localStorage.setItem('lang', lang);
   }
 
-  enableTooltips() {
+  private enableTooltips(): void {
     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     tooltipTriggerList.map((tooltipTriggerEl) => {
       new bootstrap.Tooltip(tooltipTriggerEl, {
@@ -48,7 +47,7 @@ export class HomeComponent implements OnInit {
     });  
   }
 
-  hideAllTooltips() {
+  private hideAllTooltips(): void {
     const tooltipElList = document.getElementsByClassName('tooltip');
     for (let i = 0; i < tooltipElList.length; i++) {
       const tooltipEl = tooltipElList[i];

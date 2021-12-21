@@ -7,10 +7,10 @@ import { Slide } from 'src/app/models/slide.interface';
   styleUrls: ['./section-projects.component.scss']
 })
 export class SectionProjectsComponent implements OnInit {
-  private srcPath = 'assets/images/';
+  private imagesPath = 'assets/images/';
   public mainProjects: Slide[] = [
     { 
-      src: this.srcPath + 'esalflores.png',
+      src: this.imagesPath + 'esalflores.png',
       alt: 'Banner Esalflores',
       title: 'Banner Esalflores',
       href: 'https://www.esalflores.com.br/',
@@ -22,7 +22,7 @@ export class SectionProjectsComponent implements OnInit {
       ]
     },
     { 
-      src: this.srcPath + 'orion.png',
+      src: this.imagesPath + 'orion.png',
       alt: 'Banner Orion',
       title: 'Banner Orion',
       externalLinkTitle: 'Live preview private', 
@@ -32,7 +32,7 @@ export class SectionProjectsComponent implements OnInit {
       ]
     },
     { 
-      src: this.srcPath + 'esalcorp.png',
+      src: this.imagesPath + 'esalcorp.png',
       alt: 'Esalcorp App',
       title: 'Esalcorp App',
       href: 'https://play.google.com/store/apps/details?id=br.com.esal.esalcorp',
@@ -44,7 +44,7 @@ export class SectionProjectsComponent implements OnInit {
       ]
     },
     { 
-      src: this.srcPath + 'esalpet.png',
+      src: this.imagesPath + 'esalpet.png',
       alt: 'Banner Esalpet',
       title: 'Banner Esalpet',
       href: 'https://www.esalpet.com.br/',
@@ -59,7 +59,7 @@ export class SectionProjectsComponent implements OnInit {
   
   public otherProjects: Slide[] = [
     { 
-      src: this.srcPath + 'orion-logo.svg',
+      src: this.imagesPath + 'orion-logo.svg',
       alt: 'Exchange currency to BRL',
       title: 'Exchange currency to BRL',
       href: 'https://gukropiwiec.github.io/currency-exchange-to-brl',
@@ -71,7 +71,7 @@ export class SectionProjectsComponent implements OnInit {
       ]
     },
     { 
-      src: this.srcPath + 'orion-logo.svg',
+      src: this.imagesPath + 'orion-logo.svg',
       alt: 'Slide 3',
       title: 'Slide 3',
       externalLinkTitle: 'Live preview private',

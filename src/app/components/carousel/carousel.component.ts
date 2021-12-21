@@ -13,10 +13,6 @@ declare const bootstrap: any;
 export class CarouselComponent implements OnInit, AfterViewInit {
   @Input() slides: Slide[] = [];
 
-  public faExternalLinkAlt = faExternalLinkAlt;
-  public faCode = faCode;
-  public faInfo = faInfo;
-
   carouselOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
@@ -24,7 +20,10 @@ export class CarouselComponent implements OnInit, AfterViewInit {
     pullDrag: true,
     dots: false,
     navSpeed: 700,
-    navText: ['<img src="assets/icons/chevron-left-26.png">', '<img src="assets/icons/chevron-right-26.png">'],
+    navText: [
+      '<img src="assets/icons/chevron-left-26.png">',
+      '<img src="assets/icons/chevron-right-26.png">'
+    ],
     nav: true,
     autoplay: true,
     autoplayHoverPause: true,
@@ -48,6 +47,10 @@ export class CarouselComponent implements OnInit, AfterViewInit {
     }
   }
 
+  faCode = faCode;
+  faExternalLinkAlt = faExternalLinkAlt;
+  faInfo = faInfo;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -57,7 +60,14 @@ export class CarouselComponent implements OnInit, AfterViewInit {
     this.enableTooltips();
   }
 
-  enableTooltips() {
+  openLink(link: string | undefined): void {
+    if (!link) {
+      return;
+    }
+    window.open(link, '_blank');
+  }
+
+  private enableTooltips(): void {
     setTimeout(() => {
       const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
       tooltipTriggerList.map((tooltipTriggerEl) => {
@@ -67,12 +77,5 @@ export class CarouselComponent implements OnInit, AfterViewInit {
         });
       });  
     });
-  }
-
-  openLink(href: string | undefined) {
-    if (!href) {
-      return;
-    }
-    window.open(href, '_blank');
   }
 }
