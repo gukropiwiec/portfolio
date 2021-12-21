@@ -10,20 +10,24 @@
             </div>
             <div class="row mb-3 row-icons">
               <div class="col-4 text-end">
-                <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="{{ slide.href ? ('Open website' | translate) : ('Live preview private' | translate) }}">
+                <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="{{ slide.externalLinkTitle | translate }}">
                   <button class="btn btn-sm btn-outline-light btn-project-item" [disabled]="!slide.href" (click)="openLink(slide.href)">
                     <fa-icon [icon]="faExternalLinkAlt"></fa-icon>
                   </button>
                 </span>
               </div>
               <div class="col-4 text-center">
-                <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="{{ slide.codeHref ? ('See code on GitHub' | translate) : ('Code private' | translate) }}">
-                  <button class="btn btn-sm btn-outline-light btn-project-item" [disabled]="!slide.codeHref"><fa-icon [icon]="faCode"></fa-icon></button>
+                <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="{{ slide.codeHref ? ('See the code on GitHub' | translate) : ('Code private' | translate) }}">
+                  <button class="btn btn-sm btn-outline-light btn-project-item" [disabled]="!slide.codeHref" (click)="openLink(slide.codeHref)">
+                    <fa-icon [icon]="faCode"></fa-icon>
+                  </button>
                 </span>
               </div>
               <div class="col-4 text-start">
-                <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="{{ 'More information' | translate }}">
-                  <button class="btn btn-sm btn-outline-light btn-project-item"><fa-icon [icon]="faInfo"></fa-icon></button>
+                <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="{{ 'See more about this project' | translate }}">
+                  <button class="btn btn-sm btn-outline-light btn-project-item">
+                    <fa-icon [icon]="faInfo"></fa-icon>
+                  </button>
                 </span>
               </div>
             </div>

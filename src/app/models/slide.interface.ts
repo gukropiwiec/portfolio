@@ -4,5 +4,6 @@ export interface Slide {
     title: String;
     href?: string;
     codeHref?: string;
-    techs: {name: string; fontColor: string;}[]
+    techs: {name: string; fontColor: string;}[];
+    externalLinkTitle: string;
 }

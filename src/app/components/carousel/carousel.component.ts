@@ -39,11 +39,10 @@ export class CarouselComponent implements OnInit, AfterViewInit {
         items: 2
       },
       740: {
-        items: 3,
-        autoplay: false
+        items: 3
       },
       940: {
-        items: 3,
+        items: 4,
         autoplay: false
       }
     }

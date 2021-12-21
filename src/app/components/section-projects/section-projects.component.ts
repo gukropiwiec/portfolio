@@ -9,30 +9,77 @@ import { Slide } from 'src/app/models/slide.interface';
 export class SectionProjectsComponent implements OnInit {
   private srcPath = 'assets/images/';
   public mainProjects: Slide[] = [
-    { src: this.srcPath + 'orion.png', alt: 'Banner Orion', title: 'Banner Orion', 
+    { 
+      src: this.srcPath + 'esalflores.png',
+      alt: 'Banner Esalflores',
+      title: 'Banner Esalflores',
+      href: 'https://www.esalflores.com.br/',
+      externalLinkTitle: 'Open website',
+      techs: [
+        { name: 'Angular', fontColor: 'text-angular' }, 
+        { name: 'Bootstrap', fontColor: 'text-bootstrap' },
+        { name: 'Laravel', fontColor: 'text-laravel' }
+      ]
+    },
+    { 
+      src: this.srcPath + 'orion.png',
+      alt: 'Banner Orion',
+      title: 'Banner Orion',
+      externalLinkTitle: 'Live preview private', 
       techs: [
         { name: 'Angular', fontColor: 'text-angular' }, 
         { name: 'Bootstrap', fontColor: 'text-bootstrap' }
       ]
     },
-    { src: this.srcPath + 'esalflores.png', alt: 'Banner Esalflores', title: 'Banner Esalflores', href: 'https://www.esalflores.com.br/',
+    { 
+      src: this.srcPath + 'esalcorp.png',
+      alt: 'Esalcorp App',
+      title: 'Esalcorp App',
+      href: 'https://play.google.com/store/apps/details?id=br.com.esal.esalcorp',
+      externalLinkTitle: 'Open on Google Play',
+      techs: [
+        { name: 'Ionic', fontColor: 'text-ionic' }, 
+        { name: 'Angular', fontColor: 'text-angular' }, 
+        { name: 'Bootstrap', fontColor: 'text-bootstrap' }
+      ]
+    },
+    { 
+      src: this.srcPath + 'esalpet.png',
+      alt: 'Banner Esalpet',
+      title: 'Banner Esalpet',
+      href: 'https://www.esalpet.com.br/',
+      externalLinkTitle: 'Live preview private',
       techs: [
         { name: 'Angular', fontColor: 'text-angular' }, 
         { name: 'Bootstrap', fontColor: 'text-bootstrap' },
-        { name: 'Laravel', fontColor: 'text-orange' }
+        { name: 'Laravel', fontColor: 'text-laravel' }
       ]
     },
-    { src: this.srcPath + 'esalpet.png', alt: 'Banner Esalpet', title: 'Banner Esalpet', href: 'https://www.esalpet.com.br/',
+  ];
+  
+  public otherProjects: Slide[] = [
+    { 
+      src: this.srcPath + 'orion-logo.svg',
+      alt: 'Exchange currency to BRL',
+      title: 'Exchange currency to BRL',
+      href: 'https://gukropiwiec.github.io/currency-exchange-to-brl',
+      codeHref: 'https://github.com/gukropiwiec/currency-exchange-to-brl',
+      externalLinkTitle: 'Open demo',
+      techs: [
+        { name: 'Ionic', fontColor: 'text-ionic' },
+        { name: 'Angular', fontColor: 'text-angular' }
+      ]
+    },
+    { 
+      src: this.srcPath + 'orion-logo.svg',
+      alt: 'Slide 3',
+      title: 'Slide 3',
+      externalLinkTitle: 'Live preview private',
       techs: [
         { name: 'Angular', fontColor: 'text-angular' }, 
         { name: 'Bootstrap', fontColor: 'text-bootstrap' }
       ]
     }
-  ];
-  public otherProjects: Slide[] = [
-    { src: this.srcPath + 'orion-logo.svg', alt: 'Slide 1', title: 'Slide 1', techs: [{ name: 'Angular', fontColor: 'text-angular' }, { name: 'Bootstrap', fontColor: 'text-bootstrap' }]},
-    { src: this.srcPath + 'orion-logo.svg', alt: 'Slide 2', title: 'Slide 2', techs: [{ name: 'Angular', fontColor: 'text-angular' }, { name: 'Bootstrap', fontColor: 'text-bootstrap' }]},
-    { src: this.srcPath + 'orion-logo.svg', alt: 'Slide 3', title: 'Slide 3', techs: [{ name: 'Angular', fontColor: 'text-angular' }, { name: 'Bootstrap', fontColor: 'text-bootstrap' }]}
   ];
 
   constructor() { }

@@ -22,6 +22,7 @@
     --node: #89c34b;
     --ionic: #4586f7;
     --gray-alpha: #bfd9ff69;
+    --laravel: #ff2d20;
 }
 
 .cursor-pointer {
@@ -102,6 +103,10 @@ span, li {
 
 .text-ionic {
     color: var(--ionic);
+}
+
+.text-laravel {
+    color: var(--laravel);
 }
 
 // BACKGROUNDS
