@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
-import { OwlOptions } from 'ngx-owl-carousel-o';
 import { faExternalLinkAlt, faCode, faInfo } from '@fortawesome/free-solid-svg-icons';
 import { Slide } from 'src/app/models/slide.interface';
+import { carouselOptions } from './carousel-options';
 
 declare const bootstrap: any;
 
@@ -13,39 +13,7 @@ declare const bootstrap: any;
 export class CarouselComponent implements OnInit, AfterViewInit {
   @Input() slides: Slide[] = [];
 
-  carouselOptions: OwlOptions = {
-    loop: true,
-    mouseDrag: true,
-    touchDrag: true,
-    pullDrag: true,
-    dots: false,
-    navSpeed: 700,
-    navText: [
-      '<img src="assets/icons/chevron-left-26.png">',
-      '<img src="assets/icons/chevron-right-26.png">'
-    ],
-    nav: true,
-    autoplay: true,
-    autoplayHoverPause: true,
-    autoplayMouseleaveTimeout: 1000,
-    autoplayTimeout: 4000,
-    margin: 10,
-    responsive: {
-      0: {
-        items: 1
-      },
-      400: {
-        items: 2
-      },
-      740: {
-        items: 3
-      },
-      940: {
-        items: 4,
-        autoplay: false
-      }
-    }
-  }
+  carouselOptions = carouselOptions;
 
   faCode = faCode;
   faExternalLinkAlt = faExternalLinkAlt;
@@ -58,6 +26,7 @@ export class CarouselComponent implements OnInit, AfterViewInit {
   
   ngAfterViewInit(): void {
     this.enableTooltips();
+    this.positionNavs();
   }
 
   openLink(link: string | undefined): void {
@@ -65,6 +34,19 @@ export class CarouselComponent implements OnInit, AfterViewInit {
       return;
     }
     window.open(link, '_blank');
+  }
+
+  positionNavs(): void {
+    const navLeftList = document.getElementsByClassName('owl-prev');
+    const navRightList = document.getElementsByClassName('owl-next');
+    for (let i = 0; i < navLeftList.length; i++) {
+      const navLeft = navLeftList[i];
+      navLeft.classList.add('nav-left');
+    }
+    for (let i = 0; i < navRightList.length; i++) {
+      const navRight = navRightList[i];
+      navRight.classList.add('nav-right');
+    }
   }
 
   private enableTooltips(): void {

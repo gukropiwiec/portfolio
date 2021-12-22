@@ -59,7 +59,7 @@ export class SectionProjectsComponent implements OnInit {
   
   public otherProjects: Slide[] = [
     { 
-      src: this.imagesPath + 'orion-logo.svg',
+      src: this.imagesPath + 'currency-exchange-app.png',
       alt: 'Exchange currency to BRL',
       title: 'Exchange currency to BRL',
       href: 'https://gukropiwiec.github.io/currency-exchange-to-brl',
@@ -68,6 +68,16 @@ export class SectionProjectsComponent implements OnInit {
       techs: [
         { name: 'Ionic', fontColor: 'text-ionic' },
         { name: 'Angular', fontColor: 'text-angular' }
+      ]
+    },
+    { 
+      src: this.imagesPath + 'orion-logo.svg',
+      alt: 'Slide 3',
+      title: 'Slide 3',
+      externalLinkTitle: 'Live preview private',
+      techs: [
+        { name: 'Angular', fontColor: 'text-angular' }, 
+        { name: 'Bootstrap', fontColor: 'text-bootstrap' }
       ]
     },
     { 

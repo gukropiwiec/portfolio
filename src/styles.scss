@@ -117,3 +117,23 @@ span, li {
 .bg-gray-alpha {
     background-color: var(--gray-alpha) !important;
 }
+
+.nav-left, .nav-right {
+    position: absolute !important;
+    top: 20% !important;
+    width: 30px !important;
+    padding: 3px !important;
+    background: transparent !important;
+
+    img {
+        width: 35px;
+    }
+}
+
+.nav-left {
+    left: -32px !important;
+}
+
+.nav-right {
+    right: -22px !important;
+}
