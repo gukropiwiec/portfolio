@@ -40,7 +40,8 @@
 <br><br>
 
 ## About The Project
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![gukropiwiec-portfolio-intro](https://user-images.githubusercontent.com/59800105/147139226-57ce0068-8e57-400e-917d-019454c48c79.gif)
+
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
