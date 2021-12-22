@@ -1,11 +1,11 @@
 import { OwlOptions } from "ngx-owl-carousel-o";
 
 export const carouselOptions: OwlOptions = {
-    loop: true,
+    rewind: true,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
-    dots: true,
+    dots: false,
     navSpeed: 700,
     navText: [
       '<img src="assets/icons/chevron-left-26.png">',

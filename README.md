@@ -1,27 +1,106 @@
-# GkPortfolio
+<div id="top"></div>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://gukropiwiec.github.io/portfolio">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-## Development server
+  <h3 align="center">Gustavo Kropiwiec Portfolio</h3>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+  <p align="center">
+    <a href="https://gukropiwiec.github.io/portfolio"><strong>See live »</strong></a>
+  </p>
+</div>
 
-## Code scaffolding
+<br><br>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Run this project locally</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-## Build
+<br><br>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## About The Project
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+### Built With
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* [Angular](https://angular.io/)
+* [Bootstrap](https://getbootstrap.com)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+## Run this project locally
+If you want to run this project locally, you can follow the step-by-step:
+
+### Prerequisites
+
+* npm
+* git
+* Angular CLI
+  ```sh
+  npm install -g @angular/cli
+  ```
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/gukropiwiec/portfolio.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Launch the server
+   ```sh
+   ng serve -o
+   ```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- CONTACT -->
+## Contact
+
+Gustavo Kropiwiec - gustavosk17@gmail.com
+
+
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+* [Font Awesome](https://fontawesome.com)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/gustavo-kropiwiec/?locale=en_US
