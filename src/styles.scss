@@ -29,6 +29,10 @@
     --mongo-db-light: #0e8f84;
 }
 
+.container {
+    color: white;
+}
+
 .cursor-pointer {
     cursor: pointer !important;
 }
@@ -136,6 +140,7 @@ span, li {
     width: 30px !important;
     padding: 3px !important;
     background: transparent !important;
+    opacity: 1 !important;
 
     img {
         width: 22px;
@@ -148,4 +153,8 @@ span, li {
 
 .nav-right {
     right: -36px !important;
+}
+
+.nav-left:hover, .nav-right:hover {
+    opacity: 0.85 !important;
 }

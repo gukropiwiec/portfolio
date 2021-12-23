@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'projects-details', loadChildren: () => import('./pages/projects-details/projects-details.module').then(m => m.ProjectsDetailsModule) },
   { path: '**', redirectTo: '/' }
 ];
 

@@ -1,9 +1,8 @@
 import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
 import { faExternalLinkAlt, faCode, faInfo } from '@fortawesome/free-solid-svg-icons';
 import { Slide } from 'src/app/models/slide.interface';
+import { enableTooltips } from 'src/app/shared/functions';
 import { carouselOptions } from './carousel-options';
-
-declare const bootstrap: any;
 
 @Component({
   selector: 'app-carousel',
@@ -25,7 +24,7 @@ export class CarouselComponent implements OnInit, AfterViewInit {
   }
   
   ngAfterViewInit(): void {
-    this.enableTooltips();
+    enableTooltips();
     this.positionNavs();
   }
 
@@ -47,17 +46,5 @@ export class CarouselComponent implements OnInit, AfterViewInit {
       const navRight = navRightList[i];
       navRight.classList.add('nav-right');
     }
-  }
-
-  private enableTooltips(): void {
-    setTimeout(() => {
-      const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-      tooltipTriggerList.map((tooltipTriggerEl) => {
-        new bootstrap.Tooltip(tooltipTriggerEl, {
-          container: 'body',
-          offset: '0,3'
-        });
-      });  
-    });
   }
 }
