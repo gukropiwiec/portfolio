@@ -71,23 +71,28 @@ export class SectionProjectsComponent implements OnInit {
       ]
     },
     { 
-      src: this.imagesPath + 'orion-logo.svg',
-      alt: 'Slide 3',
-      title: 'Slide 3',
-      externalLinkTitle: 'Live preview private',
+      src: this.imagesPath + 'realtime-chat-app.png',
+      alt: 'Realtime Chat app using Firebase',
+      title: 'Realtime Chat app using Firebase',
+      codeHref: 'https://github.com/gukropiwiec/chat-firebase',
+      externalLinkTitle: 'Demo in development',
       techs: [
-        { name: 'Angular', fontColor: 'text-angular' }, 
-        { name: 'Bootstrap', fontColor: 'text-bootstrap' }
+        { name: 'Firebase', fontColor: 'text-firebase' },
+        { name: 'Ionic', fontColor: 'text-ionic' }, 
+        { name: 'Angular', fontColor: 'text-angular' }
       ]
     },
     { 
-      src: this.imagesPath + 'orion-logo.svg',
-      alt: 'Slide 3',
-      title: 'Slide 3',
-      externalLinkTitle: 'Live preview private',
+      src: this.imagesPath + 'planting-trees.png',
+      alt: 'Planting Trees Project',
+      title: 'Planting Trees Project',
+      codeHref: 'https://github.com/gukropiwiec/rest-api-planting-trees',
+      externalLinkTitle: 'Demo in development',
       techs: [
+        { name: 'Ionic', fontColor: 'text-ionic' }, 
         { name: 'Angular', fontColor: 'text-angular' }, 
-        { name: 'Bootstrap', fontColor: 'text-bootstrap' }
+        { name: 'NodeJS', fontColor: 'text-node' },
+        { name: 'MongoDB', fontColor: 'text-mongo-db' }
       ]
     }
   ];

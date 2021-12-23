@@ -5,66 +5,8 @@
         min-height: 100vh;
     }
 
-    .row-title {
-        height: 88vh;
-    }
-
-    .row-chev {
-        height: 12vh;
-    }
-
-    .title {
-       font-size: 4rem;
-    }
-
-    .icon-arrow-down {
-        font-size: 3rem;
-    }
-
-    .section-title {
-        border-bottom: 1px solid white;
-    }
-
     .section {
         padding-top: 75px;
     }
 
-}
-
-.navbar {
-    background: rgba(0, 0, 0, 0.7);
-
-    a {
-        text-transform: uppercase;
-        margin: 0 1rem;
-        color: white;
-    }
-    
-    .center-nav {
-        margin-left: 10rem;
-    }
-}
-
-.lang-flag {
-    max-width: 35px;
-    max-height: 23px;
-    opacity: 0.3;
-}
-
-.active-lang {
-    opacity: 1;
-}
-
-.cellonly {
-    ul {
-        background: rgba(0, 0, 0, 0.7);
-    }
-}
-
-.dropdown-menu {
-    margin-top: 2.9rem;
-}
-
-.logo-cell {
-    height: 2.5rem;
 }

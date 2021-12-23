@@ -18,6 +18,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { SectionProjectsComponent } from './components/section-projects/section-projects.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SectionIntroComponent } from './components/section-intro/section-intro.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
@@ -31,7 +33,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     SectionContactComponent,
     SectionSkillsComponent,
     CarouselComponent,
-    SectionProjectsComponent
+    SectionProjectsComponent,
+    NavbarComponent,
+    SectionIntroComponent
   ],
   imports: [
     BrowserModule,

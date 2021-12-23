@@ -1,7 +1,7 @@
 import { OwlOptions } from "ngx-owl-carousel-o";
 
 export const carouselOptions: OwlOptions = {
-    rewind: true,
+    loop: true,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,

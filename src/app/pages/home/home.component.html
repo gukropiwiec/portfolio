@@ -1,77 +1,8 @@
-<nav class="navbar fixed-top navbar-expand navbar-dark justify-content-center deskonlyflex">
-    <ul class="navbar-nav mx-auto">
-        <li class="nav-item center-nav" [ngClass]="{'active': (activeNav === 'section-intro')}">
-            <a class="nav-link cursor-pointer" (click)="goToSection('section-intro')">Intro</a>
-        </li>
-        <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-projects')}">
-            <a class="nav-link cursor-pointer" (click)="goToSection('section-projects')">{{ 'Projects' | translate }}</a>
-        </li>
-        <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-skills')}">
-            <a class="nav-link cursor-pointer" (click)="goToSection('section-skills')">{{ 'Skills' | translate }}</a>
-        </li>
-        <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-about')}">
-            <a class="nav-link cursor-pointer" (click)="goToSection('section-about')">{{ 'About' | translate }}</a>
-        </li>
-        <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-contact')}">
-            <a class="nav-link cursor-pointer" (click)="goToSection('section-contact')">{{ 'Contact' | translate }}</a>
-        </li>
-    </ul>
-    <img class="lang-flag mx-1 cursor-pointer" [ngClass]="{'active-lang': lang == 'en-US' }" (click)="changeLanguage('en-US')" src="assets/images/languages/en-US.svg" alt="US flag">
-    <img class="lang-flag mx-1 cursor-pointer" [ngClass]="{'active-lang': lang == 'en-GB' }" (click)="changeLanguage('en-GB')" src="assets/images/languages/en-GB.svg" alt="UK flag">
-    <img class="lang-flag ms-1 me-5 cursor-pointer" [ngClass]="{'active-lang': lang == 'pt-BR' }" (click)="changeLanguage('pt-BR')" src="assets/images/languages/pt-BR.svg" alt="BR flag">
-</nav>
-<nav class="navbar fixed-top navbar-dark cellonly">
-    <div class="row">
-        <div class="col-6">
-            <img class="ms-3 logo-cell" src="assets/icons/gk-icon.svg" alt="logo" (click)="goToSection('section-intro')">
-        </div>
-        <div class="col-6">
-            <div class="dropdown">
-                <button class="btn btn-outline-light dropdown-toggle float-end me-4" type="button" id="dropDownNavTopCell" data-bs-toggle="dropdown" aria-expanded="false">
-                  Menu
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropDownNavTopCell">
-                    <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-intro')}">
-                        <a class="nav-link dropdown-item" (click)="goToSection('section-intro')">Intro</a>
-                    </li>
-                    <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-projects')}">
-                        <a class="nav-link dropdown-item" (click)="goToSection('section-projects')">{{ 'Projects' | translate }}</a>
-                    </li>
-                    <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-skills')}">
-                        <a class="nav-link dropdown-item" (click)="goToSection('section-skills')">{{ 'Skills' | translate }}</a>
-                    </li>
-                    <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-about')}">
-                        <a class="nav-link dropdown-item" (click)="goToSection('section-about')">{{ 'About' | translate }}</a>
-                    </li>
-                    <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-contact')}">
-                        <a class="nav-link dropdown-item" (click)="goToSection('section-contact')">{{ 'Contact' | translate }}</a>
-                    </li>
-                    <li>
-                        <div class="nav-link dropdown-item ms-3">
-                            <img class="lang-flag mx-1" [ngClass]="{'active-lang': lang == 'en-US' }" (click)="changeLanguage('en-US')" src="assets/images/languages/en-US.svg" alt="US flag">
-                            <img class="lang-flag mx-1" [ngClass]="{'active-lang': lang == 'en-GB' }" (click)="changeLanguage('en-GB')" src="assets/images/languages/en-GB.svg" alt="UK flag">
-                            <img class="lang-flag ms-1" [ngClass]="{'active-lang': lang == 'pt-BR' }" (click)="changeLanguage('pt-BR')" src="assets/images/languages/pt-BR.svg" alt="BR flag">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</nav>
+<app-navbar></app-navbar>
 <div class="container justify-content-center">
     <!-- INTRO SECTION -->
     <section id="section-intro">
-        <div class="row row-title">
-            <div class="col align-self-center text-center animate__animated animate__fadeInDown">
-                <h1 class="title">Gustavo Kropiwiec</h1>
-                <h2 class="subtitle">{{ 'Software Engineer' | translate }}</h2>
-            </div>
-        </div>
-        <div class="row row-chev">
-            <div class="col text-center animate__animated animate__fadeInDown animate__infinite animate__slow" id="chev-animation" (click)="goToSection('section-projects')">
-                <fa-icon [icon]="faChevronDown" class="icon-arrow-down cursor-pointer"></fa-icon>
-            </div>
-        </div>
+        <app-section-intro></app-section-intro>
     </section>
     <!-- PROJECTS SECTION -->
     <section id="section-projects" class="mt-2 section">

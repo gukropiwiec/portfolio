@@ -14,6 +14,7 @@
     --purple-alpha: #9b5dff9a;
     --dbm: #109b90;
     --angular: #dd0031;
+    --angular-light: #ff194c;
     --bootstrap: #7952b3;
     --html: #e96228;
     --javascript: #efd81d;
@@ -23,6 +24,9 @@
     --ionic: #4586f7;
     --gray-alpha: #bfd9ff69;
     --laravel: #ff2d20;
+    --firebase: #ffc400;
+    --mongo-db: #023430;
+    --mongo-db-light: #0e8f84;
 }
 
 .cursor-pointer {
@@ -74,7 +78,7 @@ span, li {
 }
 
 .text-angular {
-    color: var(--angular);
+    color: var(--angular-light);
 }
 
 .text-bootstrap {
@@ -109,6 +113,14 @@ span, li {
     color: var(--laravel);
 }
 
+.text-firebase {
+    color: var(--firebase);
+}
+
+.text-mongo-db {
+    color: var(--mongo-db-light);
+}
+
 // BACKGROUNDS
 .bg-purple-alpha {
     background-color: var(--purple-alpha) !important;
@@ -126,14 +138,14 @@ span, li {
     background: transparent !important;
 
     img {
-        width: 35px;
+        width: 22px;
     }
 }
 
 .nav-left {
-    left: -32px !important;
+    left: -37px !important;
 }
 
 .nav-right {
-    right: -22px !important;
+    right: -36px !important;
 }
