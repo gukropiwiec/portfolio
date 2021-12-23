@@ -8,8 +8,8 @@ export const carouselOptions: OwlOptions = {
     dots: false,
     navSpeed: 700,
     navText: [
-      '<img src="assets/icons/chevron-left-26.png">',
-      '<img src="assets/icons/chevron-right-26.png">'
+      '<img src="assets/icons/chevron-left.svg">',
+      '<img src="assets/icons/chevron-right.svg">'
     ],
     nav: true,
     autoplay: true,
