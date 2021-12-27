@@ -20,6 +20,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { SectionProjectsComponent } from './components/section-projects/section-projects.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SectionIntroComponent } from './components/section-intro/section-intro.component';
+import { TimelineComponent } from './components/timeline/timeline.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
@@ -35,7 +36,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     CarouselComponent,
     SectionProjectsComponent,
     NavbarComponent,
-    SectionIntroComponent
+    SectionIntroComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,

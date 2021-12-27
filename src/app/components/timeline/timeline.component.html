@@ -1,0 +1,26 @@
+<ul class="timeline">
+    <li class="my-3 event" data-date="2021" (click)="openWorkDetail('work-detail3', 'chevron3')">
+        <span class="cellonly expand-detail-icon"><fa-icon [icon]="faChevronCircleDown" id="chevron3"></fa-icon></span>
+        <span class="text-purple">{{ 'Frontend Web Developer' | translate }}</span> {{ 'at' | translate }} <span class="text-dbm">DBM Contact Center</span> ({{ 'May' | translate }} 2021 - {{ 'Present' | translate}})
+        <ul class="deskonly work-description mt-2" id="work-detail3">
+            <li>{{ 'AboutDescription.DBM1' | translate }}</li>
+            <li>{{ 'AboutDescription.DBM2' | translate }}</li>
+        </ul>
+    </li>
+    <li class="my-3 event" data-date="2020" (click)="openWorkDetail('work-detail2', 'chevron2')">
+        <span class="cellonly expand-detail-icon"><fa-icon [icon]="faChevronCircleDown" id="chevron2"></fa-icon></span>
+        <span class="text-purple">{{ 'Fullstack Web Developer' | translate }}</span> {{ 'at' | translate }} <span class="text-success">Esallabs</span> ({{ 'August' | translate }} 2020 - {{ 'May' | translate }} 2021)
+        <ul class="deskonly work-description mt-2" id="work-detail2">
+            <li>{{ 'AboutDescription.Esal1' | translate }}</li>
+            <li>{{ 'AboutDescription.Esal2' | translate }}</li>
+        </ul>
+    </li>
+    <li class="my-3 event" data-date="2019" (click)="openWorkDetail('work-detail1', 'chevron1')">
+        <span class="cellonly expand-detail-icon"><fa-icon [icon]="faChevronCircleDown" id="chevron1"></fa-icon></span>
+        <span class="text-purple">{{ 'Junior Developer' | translate }}</span> {{ 'at' | translate }} <span class="text-danger">Viasoft Korp</span> ({{ 'November' | translate }} 2019 - {{ 'May' | translate }} 2020)
+        <ul class="deskonly work-description mt-2" id="work-detail1">
+            <li>{{ 'AboutDescription.Korp1' | translate }}</li>
+            <li>{{ 'AboutDescription.Korp2' | translate }}</li>
+        </ul>
+    </li>
+</ul>
