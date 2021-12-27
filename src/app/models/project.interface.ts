@@ -1,6 +1,6 @@
 import { Tech } from "./tech.interface";
 
-export interface Slide {
+export interface Project {
     src: String;
     alt: String;
     title: String;

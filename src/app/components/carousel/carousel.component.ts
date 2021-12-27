@@ -1,7 +1,5 @@
 import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
-import { faExternalLinkAlt, faCode, faInfo } from '@fortawesome/free-solid-svg-icons';
-import { Slide } from 'src/app/models/slide.interface';
-import { enableTooltips } from 'src/app/shared/functions';
+import { Project } from 'src/app/models/project.interface';
 import { carouselOptions } from './carousel-options';
 
 @Component({
@@ -10,13 +8,9 @@ import { carouselOptions } from './carousel-options';
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent implements OnInit, AfterViewInit {
-  @Input() slides: Slide[] = [];
+  @Input() slides: Project[] = [];
 
   carouselOptions = carouselOptions;
-
-  faCode = faCode;
-  faExternalLinkAlt = faExternalLinkAlt;
-  faInfo = faInfo;
 
   constructor() { }
 
@@ -24,15 +18,7 @@ export class CarouselComponent implements OnInit, AfterViewInit {
   }
   
   ngAfterViewInit(): void {
-    enableTooltips();
     this.positionNavs();
-  }
-
-  openLink(link: string | undefined): void {
-    if (!link) {
-      return;
-    }
-    window.open(link, '_blank');
   }
 
   positionNavs(): void {

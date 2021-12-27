@@ -18,9 +18,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { SectionProjectsComponent } from './components/section-projects/section-projects.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
 import { SectionIntroComponent } from './components/section-intro/section-intro.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
+import { SharedModule } from './shared/shared.module';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
@@ -35,7 +35,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     SectionSkillsComponent,
     CarouselComponent,
     SectionProjectsComponent,
-    NavbarComponent,
     SectionIntroComponent,
     TimelineComponent
   ],
@@ -55,7 +54,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
     RouterModule,
     BrowserAnimationsModule,
-    CarouselModule
+    CarouselModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent],
