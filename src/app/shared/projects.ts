@@ -85,7 +85,7 @@ export const otherProjects: Project[] = [
       techs: [
         { name: 'Ionic', fontColor: 'text-ionic' }, 
         { name: 'Angular', fontColor: 'text-angular' }, 
-        { name: 'NodeJS', fontColor: 'text-node' },
+        { name: 'NodeJS', fontColor: 'text-nodejs' },
         { name: 'MongoDB', fontColor: 'text-mongo-db' }
       ]
     }
