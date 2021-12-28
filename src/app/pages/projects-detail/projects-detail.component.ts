@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Project } from 'src/app/models/project.interface';
 import { mainProjects, otherProjects } from 'src/app/shared/projects';
 
@@ -7,7 +7,7 @@ import { mainProjects, otherProjects } from 'src/app/shared/projects';
   templateUrl: './projects-detail.component.html',
   styleUrls: ['./projects-detail.component.scss']
 })
-export class ProjectsDetailComponent implements OnInit {
+export class ProjectsDetailComponent implements OnInit, AfterViewInit {
   projects: Project[] = [];
 
   constructor() { }
@@ -16,4 +16,7 @@ export class ProjectsDetailComponent implements OnInit {
     this.projects = [...mainProjects, ...otherProjects];
   }
 
+  ngAfterViewInit(): void {
+      scrollTo(0, 0);
+  }
 }
