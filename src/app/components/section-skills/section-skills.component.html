@@ -1,4 +1,4 @@
-<div class="card card-section">
+<div class="card card-section card-section-height">
     <div class="card-body">
         <div class="row text-center mb-4">
             <div class="col-12 col-sm-6 col-lg-3 mt-5">
@@ -30,38 +30,11 @@
                 <p>{{ 'I\'m very adapdable and fast to learn new things' | translate }}</p>
             </div>
         </div>
-        <div class="row mt-5">
-            <div class="progress">
-                <span class="me-3 text-html fw-bold">HTML</span>
-                <div class="progress-bar prog-90 bg-gray-alpha" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-            </div>
-            <div class="progress">
-                <span class="me-3 text-css fw-bold">CSS</span>
-                <div class="progress-bar prog-90 bg-gray-alpha" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-            </div>
-            <div class="progress">
-                <span class="me-3 text-javascript fw-bold">JavaScript</span>
-                <div class="progress-bar prog-85 bg-gray-alpha" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-            </div>
-            <div class="progress">
-                <span class="me-3 text-bootstrap fw-bold">Bootstrap</span>
-                <div class="progress-bar prog-85 bg-gray-alpha" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-            </div>
-            <div class="progress">
-                <span class="me-3 text-angular fw-bold">Angular</span>
-                <div class="progress-bar prog-75 bg-gray-alpha" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-            </div>
-            <div class="progress">
-                <span class="me-3 text-ionic fw-bold">Ionic</span>
-                <div class="progress-bar prog-70 bg-gray-alpha" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-            </div>
-            <div class="progress">
-                <span class="me-3 text-php fw-bold">PHP</span>
-                <div class="progress-bar prog-50 bg-gray-alpha" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-            </div>
-            <div class="progress">
-                <span class="me-3 text-node fw-bold">NodeJS</span>
-                <div class="progress-bar prog-50 bg-gray-alpha" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+        <div class="row mt-5 text-center justify-content-center">
+            <div class="col-6 col-sm-4 col-md-3 my-3 my-md-5" *ngFor="let technology of technologies">
+                <img class="img-techs" src="{{ technology.icon }}">
+                <br>
+                <span class="{{ technology.fontColor }} fw-bold">{{ technology.name }}</span>
             </div>
         </div>
     </div>

@@ -1,4 +1,4 @@
-import { Tech } from "./tech.interface";
+import { Technology } from "./technology.interface";
 
 export interface Project {
     src: String;
@@ -6,6 +6,6 @@ export interface Project {
     title: String;
     href?: string;
     codeHref?: string;
-    techs: Tech[];
+    techs: Technology[];
     externalLinkTitle: string;
 }

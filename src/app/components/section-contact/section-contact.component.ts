@@ -8,7 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./section-contact.component.scss']
 })
 export class SectionContactComponent implements OnInit {
-  public faExternalLinkAlt = faExternalLinkAlt;
+  faExternalLinkAlt = faExternalLinkAlt;
 
   constructor(private translateS: TranslateService) { }
 

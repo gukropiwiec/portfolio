@@ -5,6 +5,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProjectBoxComponent } from './project-box/project-box.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
     imports: [
@@ -15,11 +16,13 @@ import { RouterModule } from '@angular/router';
      ],
     declarations: [
         ProjectBoxComponent,
-        NavbarComponent
+        NavbarComponent,
+        FooterComponent
     ],
     exports: [
         ProjectBoxComponent,
-        NavbarComponent
+        NavbarComponent,
+        FooterComponent
     ],
     schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })

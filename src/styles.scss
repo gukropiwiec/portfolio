@@ -20,13 +20,14 @@
     --javascript: #efd81d;
     --css: #2862e9;
     --php: #7377ad;
-    --node: #89c34b;
+    --nodejs: #89c34b;
     --ionic: #4586f7;
     --gray-alpha: #bfd9ff69;
     --laravel: #ff2d20;
     --firebase: #ffc400;
     --mongo-db: #023430;
     --mongo-db-light: #0e8f84;
+    --typescript: #1976d2;
 }
 
 .container {
@@ -64,8 +65,11 @@
 
 .card-section {
     background: rgba(253, 253, 253, 0.089) !important;
-    min-height: 80vh !important;
     width: 100% !important;
+}
+
+.card-section-height {
+    min-height: 80vh !important;
 }
 
 span, li {
@@ -105,8 +109,8 @@ span, li {
     color: var(--php);
 }
 
-.text-node {
-    color: var(--node);
+.text-nodejs {
+    color: var(--nodejs);
 }
 
 .text-ionic {
@@ -123,6 +127,10 @@ span, li {
 
 .text-mongo-db {
     color: var(--mongo-db-light);
+}
+
+.text-typescript {
+    color: var(--typescript);
 }
 
 // BACKGROUNDS

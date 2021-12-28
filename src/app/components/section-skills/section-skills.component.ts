@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+import { technologies } from 'src/app/shared/technologies';
 
 @Component({
   selector: 'app-section-skills',
@@ -7,7 +8,8 @@ import { faMobileAlt } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./section-skills.component.scss']
 })
 export class SectionSkillsComponent implements OnInit {
-  public faMobileAlt = faMobileAlt;
+  faMobileAlt = faMobileAlt;
+  technologies = technologies;
 
   constructor() { }
 

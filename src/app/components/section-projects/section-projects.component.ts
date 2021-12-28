@@ -7,8 +7,8 @@ import { mainProjects, otherProjects } from 'src/app/shared/projects';
   styleUrls: ['./section-projects.component.scss']
 })
 export class SectionProjectsComponent implements OnInit {
-  public mainProjects = mainProjects;
-  public otherProjects = otherProjects;
+  mainProjects = mainProjects;
+  otherProjects = otherProjects;
 
   constructor() { }
 
