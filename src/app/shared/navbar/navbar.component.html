@@ -22,6 +22,12 @@
             <a class="nav-link cursor-pointer" [routerLink]="['/']" routerLinkActive="router-link-active">Home</a>
         </li>
     </ul>
+    <span *ngIf="currentColorMode === 'dark'" class="d-inline-block me-4" tabindex="0" data-bs-toggle="tooltip" title="{{ 'Change to light mode' | translate }}">
+        <fa-icon [icon]="faSun" class="color-mode-icon cursor-pointer" (click)="changeColorMode('light')"></fa-icon>
+    </span>
+    <span *ngIf="currentColorMode === 'light'" class="d-inline-block me-4" tabindex="0" data-bs-toggle="tooltip" title="{{ 'Change to dark mode' | translate }}">
+        <fa-icon [icon]="faMoon" class="color-mode-icon cursor-pointer" (click)="changeColorMode('dark')"></fa-icon>
+    </span>
     <img class="lang-flag mx-1 cursor-pointer" [ngClass]="{'active-lang': lang == 'en-US' }" (click)="changeLanguage('en-US')" src="assets/icons/languages/en-US.png" alt="US flag">
     <!-- <img class="lang-flag mx-1 cursor-pointer" [ngClass]="{'active-lang': lang == 'en-GB' }" (click)="changeLanguage('en-GB')" src="assets/icons/languages/en-GB.png" alt="UK flag"> -->
     <img class="lang-flag ms-1 me-5 cursor-pointer" [ngClass]="{'active-lang': lang == 'pt-BR' }" (click)="changeLanguage('pt-BR')" src="assets/icons/languages/pt-BR.png" alt="BR flag">
@@ -38,20 +44,28 @@
                   Menu
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropDownNavTopCellHome">
-                    <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-intro')}">
+                    <li class="nav-item">
                         <a class="nav-link dropdown-item" (click)="goToSection('section-intro')">Intro</a>
                     </li>
-                    <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-projects')}">
+                    <li class="nav-item">
                         <a class="nav-link dropdown-item" (click)="goToSection('section-projects')">{{ 'Projects' | translate }}</a>
                     </li>
-                    <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-skills')}">
+                    <li class="nav-item">
                         <a class="nav-link dropdown-item" (click)="goToSection('section-skills')">{{ 'Skills' | translate }}</a>
                     </li>
-                    <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-about')}">
+                    <li class="nav-item">
                         <a class="nav-link dropdown-item" (click)="goToSection('section-about')">{{ 'About' | translate }}</a>
                     </li>
-                    <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-contact')}">
+                    <li class="nav-item">
                         <a class="nav-link dropdown-item" (click)="goToSection('section-contact')">{{ 'Contact' | translate }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a *ngIf="currentColorMode === 'dark'" class="nav-link dropdown-item">
+                            <fa-icon [icon]="faSun" class="color-mode-icon" (click)="changeColorMode('light')"></fa-icon>
+                        </a>
+                        <a *ngIf="currentColorMode === 'light'" class="nav-link dropdown-item">
+                            <fa-icon [icon]="faMoon" class="color-mode-icon" (click)="changeColorMode('dark')"></fa-icon>
+                        </a>
                     </li>
                     <li>
                         <div class="nav-link dropdown-item ms-3">
@@ -69,6 +83,14 @@
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropDownNavTopCell" *ngIf="currentUrl != '/'">
                     <li class="nav-item">
                         <a class="nav-link dropdown-item" routerLinkActive="router-link-active" (click)="navigateHome()">{{ 'Home' | translate }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a *ngIf="currentColorMode === 'dark'" class="nav-link dropdown-item">
+                            <fa-icon [icon]="faSun" class="color-mode-icon" (click)="changeColorMode('light')"></fa-icon>
+                        </a>
+                        <a *ngIf="currentColorMode === 'light'" class="nav-link dropdown-item">
+                            <fa-icon [icon]="faMoon" class="color-mode-icon" (click)="changeColorMode('dark')"></fa-icon>
+                        </a>
                     </li>
                     <li>
                         <div class="nav-link dropdown-item ms-3">

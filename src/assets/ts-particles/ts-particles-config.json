@@ -1,8 +1,5 @@
 {
     "background": {
-        "color": {
-            "value": "#444"
-        },
         "image": "linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(54,42,57,1)  100%)",
         "position": "50% 50%",
         "repeat": "no-repeat",

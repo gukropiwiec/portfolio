@@ -25,3 +25,15 @@ export function hideAllTooltips(): void {
       tooltipEl.remove();
     }
 }
+
+/**
+ * Check if a given element is on screen
+ * @param selector
+ * @returns when the element shows, returns a promise with the element
+*/
+export async function checkElement(selector: any): Promise<any> {
+  while (document.querySelector(selector) === null) {
+    await new Promise( resolve => requestAnimationFrame(resolve) )
+  }
+  return document.querySelector(selector); 
+}
