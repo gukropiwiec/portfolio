@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   activeNav = 'section-intro';
   currentColorMode = localStorage.getItem('colorMode') || 'dark';
   currentUrl = '/';
-  lang = localStorage.getItem('lang') || 'en-US';
+  lang = 'en-US';
   faSun = faSun;
   faMoon = faMoon;
 
@@ -71,7 +71,17 @@ export class NavbarComponent implements OnInit, AfterViewInit {
     this.router.navigateByUrl('/');
   }
 
-  private languageConfig() {
+  /**
+   * This method will set the language based on these steps:
+   * 1. The default language is **'en-US'**
+   * 2. It will try to get the **browser language** and if theres any, overwrite the first step
+   * 3. It will try to get the language on **local storage** and if theres any, overwrite the first two steps
+   * 4. It will try to get the language from **query params** and if theres any, overwrite the first three steps.
+  */
+  private languageConfig(): void {
+    const browserLang = this.translateS.getBrowserCultureLang();
+    this.lang = browserLang || this.lang;
+    this.lang = localStorage.getItem('lang') || this.lang;
     this.translateS.use(this.lang).subscribe(() => {
       this.activatedRoute.queryParams.subscribe(queryParams => {
         if (queryParams['lang']) {
