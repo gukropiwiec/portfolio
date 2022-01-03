@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { NavigationStart, Router } from '@angular/router';
+import { ActivatedRoute, NavigationStart, Router } from '@angular/router';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { checkElement, enableTooltips, hideAllTooltips } from 'src/app/shared/functions';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
@@ -17,19 +17,15 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   faSun = faSun;
   faMoon = faMoon;
 
-  constructor(private translateS: TranslateService, private router: Router) { }
+  constructor(private translateS: TranslateService,
+              private router: Router,
+              private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.translateS.use(this.lang);
-    this.translateS.onLangChange.subscribe((event: LangChangeEvent) => {
-      setTimeout(() => {
-        hideAllTooltips();
-        enableTooltips();
-      });
-    });
-    this.router.events.subscribe((ev) => {
-      if (ev instanceof NavigationStart) {
-        this.currentUrl = ev.url;
+    this.languageConfig();
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationStart) {
+        this.currentUrl = event.url.split('?')[0];
       }
     });
   }
@@ -61,8 +57,6 @@ export class NavbarComponent implements OnInit, AfterViewInit {
 
   changeLanguage(lang: string): void {
     this.translateS.use(lang);
-    this.lang = lang;
-    localStorage.setItem('lang', lang);
   }
 
   goToSection(section: string): void {
@@ -75,5 +69,23 @@ export class NavbarComponent implements OnInit, AfterViewInit {
       return;
     }
     this.router.navigateByUrl('/');
+  }
+
+  private languageConfig() {
+    this.translateS.use(this.lang).subscribe(() => {
+      this.activatedRoute.queryParams.subscribe(queryParams => {
+        if (queryParams['lang']) {
+          this.translateS.use(queryParams['lang']);
+        }
+      });
+    });
+    this.translateS.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.lang = event.lang;
+      localStorage.setItem('lang', event.lang);
+      setTimeout(() => {
+        hideAllTooltips();
+        enableTooltips();
+      });
+    });
   }
 }
