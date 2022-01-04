@@ -1,5 +1,5 @@
 <nav class="navbar fixed-top navbar-expand navbar-dark justify-content-center deskonlyflex">
-    <img class="ms-4 logo-cell cursor-pointer" src="assets/icons/gk-icon.svg" alt="logo" (click)="navigateHome()">
+    <img class="ms-4 logo-cell cursor-pointer" src="assets/icons/gk-icon-white-bg-transparent.svg" alt="logo" (click)="navigateHome()">
     <ul class="navbar-nav mx-auto" *ngIf="currentUrl == '/'">
         <li class="nav-item center-nav" [ngClass]="{'active': (activeNav === 'section-intro')}">
             <a class="nav-link cursor-pointer" (click)="goToSection('section-intro')">Intro</a>
@@ -22,11 +22,11 @@
             <a class="nav-link cursor-pointer" [routerLink]="['/']" routerLinkActive="router-link-active">Home</a>
         </li>
     </ul>
-    <span *ngIf="currentColorMode === 'dark'" class="d-inline-block me-4" tabindex="0" data-bs-toggle="tooltip" title="{{ 'Change to light mode' | translate }}">
-        <fa-icon [icon]="faSun" class="color-mode-icon cursor-pointer" (click)="changeColorMode('light')"></fa-icon>
+    <span *ngIf="currentColorMode === 'dark'" class="d-flex me-4" tabindex="0" data-bs-toggle="tooltip" title="{{ 'Change to light mode' | translate }}">
+        <img src="assets/icons/sun.png" class="color-mode-icon cursor-pointer" (click)="changeColorMode('light')">
     </span>
-    <span *ngIf="currentColorMode === 'light'" class="d-inline-block me-4" tabindex="0" data-bs-toggle="tooltip" title="{{ 'Change to dark mode' | translate }}">
-        <fa-icon [icon]="faMoon" class="color-mode-icon cursor-pointer" (click)="changeColorMode('dark')"></fa-icon>
+    <span *ngIf="currentColorMode === 'light'" class="d-flex me-4" tabindex="0" data-bs-toggle="tooltip" title="{{ 'Change to dark mode' | translate }}">
+        <img src="assets/icons/moon.png" class="color-mode-icon cursor-pointer" (click)="changeColorMode('dark')">
     </span>
     <img class="lang-flag mx-1 cursor-pointer" [ngClass]="{'active-lang': lang == 'en-US' }" (click)="changeLanguage('en-US')" src="assets/icons/languages/en-US.png" alt="US flag">
     <!-- <img class="lang-flag mx-1 cursor-pointer" [ngClass]="{'active-lang': lang == 'en-GB' }" (click)="changeLanguage('en-GB')" src="assets/icons/languages/en-GB.png" alt="UK flag"> -->
@@ -36,7 +36,7 @@
 <nav class="navbar fixed-top navbar-dark cellonly">
     <div class="row">
         <div class="col-6">
-            <img class="ms-3 logo-cell" src="assets/icons/gk-icon.svg" alt="logo" (click)="navigateHome()">
+            <img class="ms-3 logo-cell" src="assets/icons/gk-icon-white-bg-transparent.svg" alt="logo" (click)="navigateHome()">
         </div>
         <div class="col-6">
             <div class="dropdown" *ngIf="currentUrl == '/'">
@@ -61,10 +61,10 @@
                     </li>
                     <li class="nav-item">
                         <a *ngIf="currentColorMode === 'dark'" class="nav-link dropdown-item">
-                            <fa-icon [icon]="faSun" class="color-mode-icon" (click)="changeColorMode('light')"></fa-icon>
+                            <img src="assets/icons/sun.png" class="color-mode-icon cursor-pointer" (click)="changeColorMode('light')">
                         </a>
                         <a *ngIf="currentColorMode === 'light'" class="nav-link dropdown-item">
-                            <fa-icon [icon]="faMoon" class="color-mode-icon" (click)="changeColorMode('dark')"></fa-icon>
+                            <img src="assets/icons/moon.png" class="color-mode-icon cursor-pointer" (click)="changeColorMode('dark')">
                         </a>
                     </li>
                     <li>
@@ -86,10 +86,10 @@
                     </li>
                     <li class="nav-item">
                         <a *ngIf="currentColorMode === 'dark'" class="nav-link dropdown-item">
-                            <fa-icon [icon]="faSun" class="color-mode-icon" (click)="changeColorMode('light')"></fa-icon>
+                            <img src="assets/icons/sun.png" class="color-mode-icon cursor-pointer" (click)="changeColorMode('light')">
                         </a>
                         <a *ngIf="currentColorMode === 'light'" class="nav-link dropdown-item">
-                            <fa-icon [icon]="faMoon" class="color-mode-icon" (click)="changeColorMode('dark')"></fa-icon>
+                            <img src="assets/icons/moon.png" class="color-mode-icon cursor-pointer" (click)="changeColorMode('dark')">
                         </a>
                     </li>
                     <li>
