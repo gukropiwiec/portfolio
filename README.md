@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://gukropiwiec.github.io/portfolio">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://user-images.githubusercontent.com/59800105/148061546-475eb55d-c82d-4158-b437-0dc6228b04a3.png" alt="Logo">
   </a>
 
   <h3 align="center">Gustavo Kropiwiec Portfolio</h3>
