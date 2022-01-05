@@ -12,15 +12,19 @@
 :root {
     --purple: #9c5dff;
     --purple-alpha: #9b5dff9a;
+    --purple-light-mode: #5300d5;
     --dbm: #109b90;
+    --dbm-light-mode: #00625b;
     --angular: #dd0031;
     --angular-light: #ff194c;
     --bootstrap: #7952b3;
     --html: #e96228;
     --javascript: #efd81d;
+    --javascript-light-mode: #a29214;
     --css: #2862e9;
     --php: #7377ad;
     --nodejs: #89c34b;
+    --nodejs-light-mode: #6f9e3d;
     --ionic: #4586f7;
     --gray-alpha: #bfd9ff69;
     --laravel: #ff2d20;
@@ -182,19 +186,35 @@ input, textarea {
 // LIGHT MODE
 .light-mode {
     .tsparticles-canvas-el {
-        background-image: linear-gradient(135deg, #1d0e2c 0%, #efe5f9 100%) !important;
+        background-image: linear-gradient(135deg, #d4b7f1 0%, #efe5f9 100%) !important;
     }
 
     .container {
-        color: #1d0e2c !important;
+        color: #000;
     }
 
     .border-bottom {
-        border-bottom: 1px solid #1d0e2c !important;
+        border-bottom: 1px solid #000 !important;
     }
 
     input, textarea {
-        color: #1d0e2c !important;
-        border-color: #1d0e2c !important;
+        color: #000;
+        border-color: #000;
+    }
+
+    .text-javascript {
+        color: var(--javascript-light-mode);
+    }
+
+    .text-nodejs {
+        color: var(--nodejs-light-mode);
+    }
+
+    .text-purple {
+        color: var(--purple-light-mode);
+    }
+
+    .text-dbm {
+        color: var(--dbm-light-mode);
     }
 }
