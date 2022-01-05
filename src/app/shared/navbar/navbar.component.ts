@@ -45,16 +45,18 @@ export class NavbarComponent implements OnInit, AfterViewInit {
     hideAllTooltips();
     this.currentColorMode = mode;
     const bodyEl = document.querySelector('body') as HTMLBodyElement;
-    const lightButtons = document.getElementsByClassName('btn-outline-light');
+    const lightButtons = document.getElementsByClassName('btn-theme');
     if (mode === 'light') {
       for (let i = 0; i < lightButtons.length; i++) {
         lightButtons[i].classList.add('btn-outline-dark');
+        lightButtons[i].classList.remove('btn-outline-light');
       }
       bodyEl.classList.add('light-mode');
       localStorage.setItem('colorMode', 'light');
     } else if (mode === 'dark') {
       for (let i = 0; i < lightButtons.length; i++) {
         lightButtons[i].classList.remove('btn-outline-dark');
+        lightButtons[i].classList.add('btn-outline-light');
       }
       bodyEl.classList.remove('light-mode');
       localStorage.setItem('colorMode', 'dark');
