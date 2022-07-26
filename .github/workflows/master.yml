@@ -6,16 +6,16 @@ on:
   workflow_dispatch:
 
 jobs:
-  # install-dependecies:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v3
-  #     - name: Install dependencies
-  #       run: npm install
+  install-dependecies:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm install
   
   build:
     runs-on: ubuntu-latest
-    # needs: install-dependecies
+    needs: install-dependecies
     environment:
       name: production
       url: 'https://gukropiwiec.github.io/portfolio/'
