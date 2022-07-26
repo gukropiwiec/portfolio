@@ -13,7 +13,6 @@ jobs:
       - name: Install dependencies
         run: |
           npm cache verify
-          npm install -g @angular/cli
           npm install
   
   build:
@@ -25,4 +24,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build and deploy
-        run: npm run deploy
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: npm run ng -- deploy --name="Gustavo Kropiwiec" --email=gustavosk17@hotmail.com
