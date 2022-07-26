@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  install-dependecies:
+  build-and-deploy:
     runs-on: windows-latest
     environment:
       name: production
@@ -14,22 +14,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install dependencies
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           npm cache verify
           npm install
-          npm run ng -- deploy --name="Gustavo Kropiwiec" --email=gustavosk17@hotmail.com
-  
-  # build:
-  #   runs-on: windows-latest
-  #   needs: install-dependecies
-  #   environment:
-  #     name: production
-  #     url: 'https://gukropiwiec.github.io/portfolio/'
-  #   steps:
-  #     - uses: actions/checkout@v3
-  #     - name: Build and deploy
-  #       env:
-  #         GH_TOKEN: ${{ secrets.GH_TOKEN }}
-  #       run: npm run ng -- deploy --name="Gustavo Kropiwiec" --email=gustavosk17@hotmail.com
+      - name: Deploy with GH Pages
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: npm run ng -- deploy --name="Gustavo Kropiwiec" --email=gustavosk17@hotmail.com
