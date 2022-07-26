@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+  workflow_dispatch:
+
+jobs:
+  install-dependecies:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm install
+  
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: 'https://gukropiwiec.github.io/portfolio/'
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build and deploy
+        run: npm run deploy
