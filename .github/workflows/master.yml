@@ -13,6 +13,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm cache verify
+          npm install -g @angular/cli
           npm install
   
   build:
