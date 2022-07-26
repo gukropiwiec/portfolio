@@ -17,7 +17,7 @@ jobs:
   
   build:
     runs-on: ubuntu-latest
-    needs: deploy-dependecies
+    needs: install-dependecies
     environment:
       name: production
       url: 'https://gukropiwiec.github.io/portfolio/'
