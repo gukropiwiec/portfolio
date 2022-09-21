@@ -11,18 +11,21 @@
     "Frontend Web Developer": "Desenvolvedor Web Pleno",
     "Fullstack Web Developer": "Desenvolvedor Web Fullstack",
     "Junior Developer": "Desenvolvedor Júnior",
+    "January": "Janeiro",
     "May": "Maio",
     "August": "Agosto",
     "November": "Novembro",
     "Present": "Hoje",
     "AboutDescription": {
         "summary": "Com quase 2 anos de experiência em Angular, atuei no desenvolvimento do e-commerce de uma grande floricultura que conta com milhares de visitas diárias, além do desenvolvimento de aplicativos utilizando Ionic. <br> Atualmente estou trabalhando em um projeto de telefonia PABX e realizando a manutenção do e-commerce que desenvolvi. <br> Gosto muito de estar atualizado e sempre buscando novos desafios e aprendizados.",
-        "DBM1": "Atualmente estou trabalhando como desenvolvedor front-end na criação de um novo sistema PBX.",
+        "DBM1": "Atuação como desenvolvedor front-end na criação de um sistema PBX.",
         "DBM2": "Tecnologias usadas: Angular com Bootstrap",
         "Esal1": "Desenvolvi o aplicativo Esalcorp, que é usado para gerenciamento interno do estoque da empresa, usando Ionic com Angular.",
         "Esal2": "Desenvolvi o e-commerce da Esalflores e Esalpet, que faz conexão com a API da empresa. O site alcança milhares de usuários mensais.",
         "Korp1": "Desenvolvi e realizei manutenção do sistema ERP, SQL queries e testes unitários.",
-        "Korp2": "Como estagiário, minha principal tarefa era escrever SQL queries e garantir a boa funcionalide do sistema."
+        "Korp2": "Como estagiário, minha principal tarefa era escrever SQL queries e garantir a boa funcionalide do sistema.",
+        "RPC1": "RPC é uma rede de televisão, sendo a maior afiliada da Rede Globo, tendo cobertura por todo o estado do Paraná.",
+        "RPC2": "Minha principal responsabilidade é desenvolver novas aplicações e garantir a boa estabilidade dos sistemas da empresa, realizando deploys com serverless e funções lambda na AWS."
     },
     "Have some questions? Get in touch!": "Tem alguma pergunta? Entre em contato!",
     "Name": "Nome",
@@ -50,5 +53,6 @@
     "Icons by": "Ícones por",
     "and": "e",
     "Change to light mode": "Mudar para o modo claro",
-    "Change to dark mode": "Mudar para o modo escuro"
+    "Change to dark mode": "Mudar para o modo escuro",
+    "System Analyst": "Analista de Sistemas"
 }
