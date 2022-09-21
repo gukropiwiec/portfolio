@@ -1,7 +1,15 @@
 <ul class="timeline">
     <li class="my-3 event" data-date="2021" (click)="openWorkDetail('work-detail3', 'chevron3')">
         <span class="cellonly expand-detail-icon"><fa-icon [icon]="faChevronCircleDown" id="chevron3"></fa-icon></span>
-        <span class="text-purple">{{ 'Frontend Web Developer' | translate }}</span> {{ 'at' | translate }} <span class="text-dbm">DBM Contact Center</span> ({{ 'May' | translate }} 2021 - {{ 'Present' | translate}})
+        <span class="text-purple">{{ 'System Analyst' | translate }}</span> {{ 'at' | translate }} <span class="text-rpc">RPC - Rede Paranaense de Comunicação</span> ({{ 'January' | translate }} 2022 - {{ 'Present' | translate}})
+        <ul class="deskonly work-description mt-2" id="work-detail3">
+            <li>{{ 'AboutDescription.RPC1' | translate }}</li>
+            <li>{{ 'AboutDescription.RPC2' | translate }}</li>
+        </ul>
+    </li>
+    <li class="my-3 event" data-date="2021" (click)="openWorkDetail('work-detail3', 'chevron3')">
+        <span class="cellonly expand-detail-icon"><fa-icon [icon]="faChevronCircleDown" id="chevron3"></fa-icon></span>
+        <span class="text-purple">{{ 'Frontend Web Developer' | translate }}</span> {{ 'at' | translate }} <span class="text-dbm">DBM Contact Center</span> ({{ 'May' | translate }} 2021 - {{ 'January' | translate}} 2022)
         <ul class="deskonly work-description mt-2" id="work-detail3">
             <li>{{ 'AboutDescription.DBM1' | translate }}</li>
             <li>{{ 'AboutDescription.DBM2' | translate }}</li>
