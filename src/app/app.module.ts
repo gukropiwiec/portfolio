@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { NgParticlesModule } from "ng-particles";
+import { NgParticlesModule } from 'ng-particles';
 import { HomeComponent } from './pages/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
@@ -23,42 +23,42 @@ import { TimelineComponent } from './components/timeline/timeline.component';
 import { SharedModule } from './shared/shared.module';
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
+    return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    SectionAboutComponent,
-    SectionContactComponent,
-    SectionSkillsComponent,
-    CarouselComponent,
-    SectionProjectsComponent,
-    SectionIntroComponent,
-    TimelineComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    NgParticlesModule,
-    FontAwesomeModule,
-    TranslateModule.forRoot({
-      loader: {
-          provide: TranslateLoader,
-          useFactory: HttpLoaderFactory,
-          deps: [HttpClient]
-      },
-      defaultLanguage: 'en-US'
-    }),
-    RouterModule,
-    BrowserAnimationsModule,
-    CarouselModule,
-    SharedModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        SectionAboutComponent,
+        SectionContactComponent,
+        SectionSkillsComponent,
+        CarouselComponent,
+        SectionProjectsComponent,
+        SectionIntroComponent,
+        TimelineComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        NgParticlesModule,
+        FontAwesomeModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            },
+            defaultLanguage: 'en-US'
+        }),
+        RouterModule,
+        BrowserAnimationsModule,
+        CarouselModule,
+        SharedModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class AppModule {}

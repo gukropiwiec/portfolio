@@ -1,21 +1,18 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { hideAllTooltips } from 'src/app/shared/functions';
 import { faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit, OnDestroy {
-  faArrowAltCircleRight = faArrowAltCircleRight;
+export class HomeComponent implements OnDestroy {
+    faArrowAltCircleRight = faArrowAltCircleRight;
 
-  constructor() { }
+    constructor() {}
 
-  ngOnInit(): void {
-  }
-
-  ngOnDestroy(): void {
-    hideAllTooltips();
-  }
+    ngOnDestroy(): void {
+        hideAllTooltips();
+    }
 }

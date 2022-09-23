@@ -1,31 +1,31 @@
 <div class="project-item-wrapper mx-auto">
-  <img [src]="project.src" [alt]="project.alt" [title]="project.title">
-  <div class="row row-techs my-3">
-    <div class="col text-center" *ngFor="let tech of project.techs">
-      <span class="{{ tech.fontColor }} fw-bold">{{ tech.name }}</span>
-    </div>
-  </div>
-  <div class="row mb-3 row-icons">
-    <div class="col-4 text-end">
-      <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="{{ project.externalLinkTitle | translate }}">
-        <button class="btn btn-sm btn-outline-light btn-theme btn-project-item" [disabled]="!project.href" (click)="openLink(project.href)">
-          <fa-icon [icon]="faExternalLinkAlt"></fa-icon>
-        </button>
-      </span>
-    </div>
-    <div class="col-4 text-center">
-      <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="{{ project.codeHref ? ('See the code on GitHub' | translate) : ('Code private' | translate) }}">
-        <button class="btn btn-sm btn-outline-light btn-theme btn-project-item" [disabled]="!project.codeHref" (click)="openLink(project.codeHref)">
-          <fa-icon [icon]="faCode"></fa-icon>
-        </button>
-      </span>
-    </div>
-    <div class="col-4 text-start">
-      <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="{{ 'See more about this project' | translate }}">
-        <button class="btn btn-sm btn-outline-light btn-theme btn-project-item">
-          <fa-icon [icon]="faInfo"></fa-icon>
-        </button>
-      </span>
-    </div>
-  </div>
+  	<img [src]="project.src" [alt]="project.alt" [title]="project.title">
+  	<div class="row row-techs my-3">
+    	<div class="col text-center" *ngFor="let tech of project.techs">
+      	<span class="{{ tech.fontColor }} fw-bold">{{ tech.name }}</span>
+    	</div>
+  	</div>
+  	<div class="row mb-3 row-icons">
+    	<div class="col-4 text-end">
+      	<span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="{{ project.externalLinkTitle | translate }}">
+        	<button class="btn btn-sm btn-outline-light btn-theme btn-project-item" [disabled]="!project.href" (click)="openLink(project.href)">
+          	<fa-icon [icon]="faExternalLinkAlt"></fa-icon>
+        	</button>
+      	</span>
+    	</div>
+    	<div class="col-4 text-center">
+      	<span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="{{ project.codeHref ? ('See the code on GitHub' | translate) : ('Code private' | translate) }}">
+        	<button class="btn btn-sm btn-outline-light btn-theme btn-project-item" [disabled]="!project.codeHref" (click)="openLink(project.codeHref)">
+          	<fa-icon [icon]="faCode"></fa-icon>
+        	</button>
+      	</span>
+    	</div>
+    	<div class="col-4 text-start">
+      	<span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="{{ 'See more about this project' | translate }}">
+        	<button class="btn btn-sm btn-outline-light btn-theme btn-project-item">
+          	<fa-icon [icon]="faInfo"></fa-icon>
+        	</button>
+      	</span>
+    	</div>
+  	</div>
 </div>
