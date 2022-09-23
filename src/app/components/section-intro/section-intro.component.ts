@@ -1,20 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-section-intro',
-  templateUrl: './section-intro.component.html',
-  styleUrls: ['./section-intro.component.scss']
+    selector: 'app-section-intro',
+    templateUrl: './section-intro.component.html',
+    styleUrls: ['./section-intro.component.scss']
 })
-export class SectionIntroComponent implements OnInit {
-  faChevronDown = faChevronDown;
+export class SectionIntroComponent {
+    faChevronDown = faChevronDown;
 
-  constructor() { }
+    constructor() {}
 
-  ngOnInit(): void {
-  }
-
-  goToSection(section: string): void {
-    document.getElementById(section)?.scrollIntoView();
-  }
+    goToSection(section: string): void {
+        document.getElementById(section)?.scrollIntoView();
+    }
 }

@@ -1,4 +1,4 @@
-import { Technology } from "./technology.interface";
+import { Technology } from './technology.interface';
 
 export interface Project {
     src: String;

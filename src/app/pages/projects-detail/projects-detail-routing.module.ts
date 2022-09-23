@@ -4,12 +4,12 @@ import { EsalfloresComponent } from './esalflores/esalflores.component';
 import { ProjectsDetailComponent } from './projects-detail.component';
 
 const routes: Routes = [
-  { path: '', component: ProjectsDetailComponent },
-  { path: 'esalflores', component: EsalfloresComponent }
+    { path: '', component: ProjectsDetailComponent },
+    { path: 'esalflores', component: EsalfloresComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forChild(routes)],
+    exports: [RouterModule]
 })
-export class ProjectsDetailRoutingModule { }
+export class ProjectsDetailRoutingModule {}

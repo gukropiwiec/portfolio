@@ -3,20 +3,20 @@ import { Project } from 'src/app/models/project.interface';
 import { mainProjects, otherProjects } from 'src/app/shared/projects';
 
 @Component({
-  selector: 'app-projects-detail',
-  templateUrl: './projects-detail.component.html',
-  styleUrls: ['./projects-detail.component.scss']
+    selector: 'app-projects-detail',
+    templateUrl: './projects-detail.component.html',
+    styleUrls: ['./projects-detail.component.scss']
 })
 export class ProjectsDetailComponent implements OnInit, AfterViewInit {
-  projects: Project[] = [];
+    projects: Project[] = [];
 
-  constructor() { }
+    constructor() {}
 
-  ngOnInit(): void {
-    this.projects = [...mainProjects, ...otherProjects];
-  }
+    ngOnInit(): void {
+        this.projects = [...mainProjects, ...otherProjects];
+    }
 
-  ngAfterViewInit(): void {
-      scrollTo(0, 0);
-  }
+    ngAfterViewInit(): void {
+        scrollTo(0, 0);
+    }
 }

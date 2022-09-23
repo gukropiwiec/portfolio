@@ -8,22 +8,9 @@ import { RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-    imports: [
-        CommonModule,
-        TranslateModule,
-        FontAwesomeModule,
-        RouterModule
-     ],
-    declarations: [
-        ProjectBoxComponent,
-        NavbarComponent,
-        FooterComponent
-    ],
-    exports: [
-        ProjectBoxComponent,
-        NavbarComponent,
-        FooterComponent
-    ],
-    schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+    imports: [CommonModule, TranslateModule, FontAwesomeModule, RouterModule],
+    declarations: [ProjectBoxComponent, NavbarComponent, FooterComponent],
+    exports: [ProjectBoxComponent, NavbarComponent, FooterComponent],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class SharedModule {}

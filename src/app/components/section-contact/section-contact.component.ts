@@ -1,24 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-section-contact',
-  templateUrl: './section-contact.component.html',
-  styleUrls: ['./section-contact.component.scss']
+    selector: 'app-section-contact',
+    templateUrl: './section-contact.component.html',
+    styleUrls: ['./section-contact.component.scss']
 })
-export class SectionContactComponent implements OnInit {
-  faExternalLinkAlt = faExternalLinkAlt;
+export class SectionContactComponent {
+    faExternalLinkAlt = faExternalLinkAlt;
 
-  constructor(private translateS: TranslateService) { }
+    constructor(private translateS: TranslateService) {}
 
-  ngOnInit(): void {
-  }
-
-  sendFormEmail(): void {
-    this.translateS.get('Oops! Sorry, functionality in development.').subscribe(res => {
-      alert(res);
-    });
-  }
-
+    sendFormEmail(): void {
+        this.translateS
+            .get('Oops! Sorry, functionality in development.')
+            .subscribe((res) => {
+                alert(res);
+            });
+    }
 }
