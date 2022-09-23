@@ -1,23 +1,25 @@
 name: CI
 
 on:
-  push:
-    branches: [ "master" ]
-  workflow_dispatch:
+    push:
+        branches: ['master']
+    workflow_dispatch:
 
 jobs:
-  build-and-deploy:
-    runs-on: windows-latest
-    environment:
-      name: production
-      url: 'https://gukropiwiec.github.io/portfolio/'
-    steps:
-      - uses: actions/checkout@v3
-      - name: Install dependencies
-        run: |
-          npm cache verify
-          npm install
-      - name: Deploy with GH Pages
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: npm run ng -- deploy --name="Gustavo Kropiwiec" --email=gustavosk17@hotmail.com
+    build-and-deploy:
+        runs-on: windows-latest
+        environment:
+            name: production
+            url: 'https://gukropiwiec.github.io/portfolio/'
+        steps:
+            - uses: actions/checkout@v3
+            - name: Install dependencies
+              run: |
+                  npm cache verify
+                  npm install
+            - name: Linting
+              run: npm run lint
+            - name: Deploy with GH Pages
+              env:
+                  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+              run: npm run ng -- deploy --name="Gustavo Kropiwiec" --email=gustavosk17@hotmail.com

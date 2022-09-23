@@ -1,6 +1,6 @@
 <nav class="navbar fixed-top navbar-expand navbar-dark justify-content-center deskonlyflex">
     <img class="ms-4 logo-cell cursor-pointer" src="assets/icons/gk-icon-white-bg-transparent.svg" alt="logo" (click)="navigateHome()">
-    <ul class="navbar-nav mx-auto" *ngIf="currentUrl == '/'">
+    <ul class="navbar-nav mx-auto" *ngIf="currentUrl === '/'">
         <li class="nav-item center-nav" [ngClass]="{'active': (activeNav === 'section-intro')}">
             <a class="nav-link cursor-pointer" (click)="goToSection('section-intro')">Intro</a>
         </li>
@@ -17,7 +17,7 @@
             <a class="nav-link cursor-pointer" (click)="goToSection('section-contact')">{{ 'Contact' | translate }}</a>
         </li>
     </ul>
-    <ul class="navbar-nav mx-auto" *ngIf="currentUrl != '/'">
+    <ul class="navbar-nav mx-auto" *ngIf="currentUrl !== '/'">
         <li class="nav-item center-nav">
             <a class="nav-link cursor-pointer" [routerLink]="['/']" routerLinkActive="router-link-active">Home</a>
         </li>
@@ -28,9 +28,9 @@
     <span *ngIf="currentColorMode === 'light'" class="d-flex me-4" tabindex="0" data-bs-toggle="tooltip" title="{{ 'Change to dark mode' | translate }}">
         <img src="assets/icons/moon.png" class="color-mode-icon cursor-pointer" (click)="changeColorMode('dark')">
     </span>
-    <img class="lang-flag mx-1 cursor-pointer" [ngClass]="{'active-lang': lang == 'en-US' }" (click)="changeLanguage('en-US')" src="assets/icons/languages/en-US.png" alt="US flag">
+    <img class="lang-flag mx-1 cursor-pointer" [ngClass]="{'active-lang': lang === 'en-US' }" (click)="changeLanguage('en-US')" src="assets/icons/languages/en-US.png" alt="US flag">
     <!-- <img class="lang-flag mx-1 cursor-pointer" [ngClass]="{'active-lang': lang == 'en-GB' }" (click)="changeLanguage('en-GB')" src="assets/icons/languages/en-GB.png" alt="UK flag"> -->
-    <img class="lang-flag ms-1 me-5 cursor-pointer" [ngClass]="{'active-lang': lang == 'pt-BR' }" (click)="changeLanguage('pt-BR')" src="assets/icons/languages/pt-BR.png" alt="BR flag">
+    <img class="lang-flag ms-1 me-5 cursor-pointer" [ngClass]="{'active-lang': lang === 'pt-BR' }" (click)="changeLanguage('pt-BR')" src="assets/icons/languages/pt-BR.png" alt="BR flag">
 </nav>
 
 <nav class="navbar fixed-top navbar-dark cellonly">
@@ -39,7 +39,7 @@
             <img class="ms-3 logo-cell" src="assets/icons/gk-icon-white-bg-transparent.svg" alt="logo" (click)="navigateHome()">
         </div>
         <div class="col-6">
-            <div class="dropdown" *ngIf="currentUrl == '/'">
+            <div class="dropdown" *ngIf="currentUrl === '/'">
                 <button class="btn btn-outline-light dropdown-toggle float-end me-4" type="button" id="dropDownNavTopCellHome" data-bs-toggle="dropdown" aria-expanded="false">
                   Menu
                 </button>
@@ -69,18 +69,18 @@
                     </li>
                     <li>
                         <div class="nav-link dropdown-item ms-3">
-                            <img class="lang-flag mx-1" [ngClass]="{'active-lang': lang == 'en-US' }" (click)="changeLanguage('en-US')" src="assets/icons/languages/en-US.png" alt="US flag">
+                            <img class="lang-flag mx-1" [ngClass]="{'active-lang': lang === 'en-US' }" (click)="changeLanguage('en-US')" src="assets/icons/languages/en-US.png" alt="US flag">
                             <!-- <img class="lang-flag mx-1" [ngClass]="{'active-lang': lang == 'en-GB' }" (click)="changeLanguage('en-GB')" src="assets/icons/languages/en-GB.png" alt="UK flag"> -->
-                            <img class="lang-flag ms-1" [ngClass]="{'active-lang': lang == 'pt-BR' }" (click)="changeLanguage('pt-BR')" src="assets/icons/languages/pt-BR.png" alt="BR flag">
+                            <img class="lang-flag ms-1" [ngClass]="{'active-lang': lang === 'pt-BR' }" (click)="changeLanguage('pt-BR')" src="assets/icons/languages/pt-BR.png" alt="BR flag">
                         </div>
                     </li>
                 </ul>
             </div>
-            <div class="dropdown" *ngIf="currentUrl != '/'">
+            <div class="dropdown" *ngIf="currentUrl !== '/'">
                 <button class="btn btn-outline-light dropdown-toggle float-end me-4" type="button" id="dropDownNavTopCell" data-bs-toggle="dropdown" aria-expanded="false">
                     Menu
                 </button>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropDownNavTopCell" *ngIf="currentUrl != '/'">
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropDownNavTopCell" *ngIf="currentUrl !== '/'">
                     <li class="nav-item">
                         <a class="nav-link dropdown-item" routerLinkActive="router-link-active" (click)="navigateHome()">{{ 'Home' | translate }}</a>
                     </li>
@@ -94,9 +94,9 @@
                     </li>
                     <li>
                         <div class="nav-link dropdown-item ms-3">
-                            <img class="lang-flag mx-1" [ngClass]="{'active-lang': lang == 'en-US' }" (click)="changeLanguage('en-US')" src="assets/icons/languages/en-US.png" alt="US flag">
+                            <img class="lang-flag mx-1" [ngClass]="{'active-lang': lang === 'en-US' }" (click)="changeLanguage('en-US')" src="assets/icons/languages/en-US.png" alt="US flag">
                             <!-- <img class="lang-flag mx-1" [ngClass]="{'active-lang': lang == 'en-GB' }" (click)="changeLanguage('en-GB')" src="assets/icons/languages/en-GB.png" alt="UK flag"> -->
-                            <img class="lang-flag ms-1" [ngClass]="{'active-lang': lang == 'pt-BR' }" (click)="changeLanguage('pt-BR')" src="assets/icons/languages/pt-BR.png" alt="BR flag">
+                            <img class="lang-flag ms-1" [ngClass]="{'active-lang': lang === 'pt-BR' }" (click)="changeLanguage('pt-BR')" src="assets/icons/languages/pt-BR.png" alt="BR flag">
                         </div>
                     </li>
                 </ul>
