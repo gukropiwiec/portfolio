@@ -16,7 +16,7 @@ export class TimelineComponent implements OnInit {
   }
 
   openWorkDetail(workId: string, chevronId: string) {
-    document.getElementById(workId)?.classList.toggle('deskonly');
+    document.getElementById(workId)?.classList.toggle('d-none');
     document.getElementById(chevronId)?.firstElementChild?.classList.toggle('rotate-chev');
   }
 }
