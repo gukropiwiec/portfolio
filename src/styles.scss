@@ -34,6 +34,7 @@
     --typescript: #1976d2;
     --rpc-light-mode: #115585;
     --rpc: #1c81c9;
+    --serverless: #f16d61;
 }
 
 .container {
@@ -142,6 +143,10 @@ li {
 
 .text-rpc {
     color: var(--rpc);
+}
+
+.text-serverless {
+    color: var(--serverless);
 }
 
 // BACKGROUNDS

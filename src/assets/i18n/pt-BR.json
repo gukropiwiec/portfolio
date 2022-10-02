@@ -5,7 +5,7 @@
     "Contact me!": "Contato",
     "My Skills": "Skills",
     "About": "Sobre",
-    "Summary" : "Resumo",
+    "Summary": "Resumo",
     "Experience": "Experiência",
     "at": "na",
     "Frontend Web Developer": "Desenvolvedor Web Pleno",
@@ -54,5 +54,7 @@
     "and": "e",
     "Change to light mode": "Mudar para o modo claro",
     "Change to dark mode": "Mudar para o modo escuro",
-    "System Analyst": "Analista de Sistemas"
+    "System Analyst": "Analista de Sistemas",
+    "Main Projects": "Principais Projetos",
+    "Other Projects": "Outros Projetos"
 }
