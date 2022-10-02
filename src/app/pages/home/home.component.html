@@ -5,22 +5,37 @@
     </section>
     <!-- PROJECTS SECTION -->
     <section id="section-projects" class="mt-2 section">
-        <h1 class="border-bottom cursor-pointer title-clicable" [routerLink]="['/projects-detail']">{{ 'Projects' | translate }} - {{ 'See all' | translate }} <fa-icon [icon]="faArrowAltCircleRight"></fa-icon></h1>
+        <h1 class="border-bottom cursor-pointer title-clicable" [routerLink]="['/projects-detail']">
+            <div class="mb-2">
+                <img src="assets/icons/project-30.png" class="section-title-icon"> 
+                {{ 'Projects' | translate }} - {{ 'See all' | translate }} 
+                <fa-icon [icon]="faArrowAltCircleRight"></fa-icon>
+            </div>
+        </h1>
         <app-section-projects></app-section-projects>
     </section>
     <!-- SKILLS SECTION -->
     <section id="section-skills" class="mt-2 section">
-        <h1 class="border-bottom">{{ 'My Skills' | translate }}</h1>
+        <h1 class="border-bottom">
+            <img src="assets/icons/skills-30.png" class="section-title-icon"> 
+            {{ 'My Skills' | translate }}
+        </h1>
         <app-section-skills></app-section-skills>
     </section>
     <!-- ABOUT SECTION -->
     <section id="section-about" class="mt-2 section">
-        <h1 class="border-bottom">{{ 'About' | translate }}</h1>
+        <h1 class="border-bottom">
+            <img src="assets/icons/about-30.png" class="section-title-icon"> 
+            {{ 'About' | translate }}
+        </h1>
         <app-section-about></app-section-about>
     </section>
     <!-- CONTACT SECTION -->
     <section id="section-contact" class="mt-2 section">
-        <h1 class="border-bottom">{{ 'Contact me!' | translate }}</h1>
+        <h1 class="border-bottom">
+            <img src="assets/icons/contact-30.png" class="section-title-icon"> 
+            {{ 'Contact me!' | translate }}
+        </h1>
         <app-section-contact></app-section-contact>
     </section>
     <app-footer></app-footer>
