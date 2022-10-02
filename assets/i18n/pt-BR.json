@@ -8,7 +8,7 @@
     "Summary": "Resumo",
     "Experience": "Experiência",
     "at": "na",
-    "Frontend Web Developer": "Desenvolvedor Web Pleno",
+    "Frontend Developer": "Desenvolvedor Web Pleno",
     "Fullstack Web Developer": "Desenvolvedor Web Fullstack",
     "Junior Developer": "Desenvolvedor Júnior",
     "January": "Janeiro",
@@ -25,7 +25,7 @@
         "Korp1": "Desenvolvi e realizei manutenção do sistema ERP, SQL queries e testes unitários.",
         "Korp2": "Como estagiário, minha principal tarefa era escrever SQL queries e garantir a boa funcionalide do sistema.",
         "RPC1": "RPC é uma rede de televisão, sendo a maior afiliada da Rede Globo, tendo cobertura por todo o estado do Paraná.",
-        "RPC2": "Minha principal responsabilidade é desenvolver novas aplicações e garantir a boa estabilidade dos sistemas da empresa, realizando deploys com serverless e funções lambda na AWS."
+        "RPC2": "Minha principal responsabilidade é desenvolver novas aplicações e garantir a boa estabilidade dos sistemas da empresa, realizando deploys com serverless e criação de funções Lambda na AWS."
     },
     "Have some questions? Get in touch!": "Tem alguma pergunta? Entre em contato!",
     "Name": "Nome",
