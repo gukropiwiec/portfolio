@@ -24,15 +24,24 @@ export const technologies: Technology[] = [
         fontColor: 'text-nodejs',
         icon: 'assets/icons/nodejs.png'
     },
-    { name: 'PHP', fontColor: 'text-php', icon: 'assets/icons/php.png' },
+    // { name: 'PHP', fontColor: 'text-php', icon: 'assets/icons/php.png' },
     {
         name: 'Angular',
         fontColor: 'text-angular',
         icon: 'assets/icons/angular.png'
     },
     {
-        name: 'Laravel',
-        fontColor: 'text-laravel',
-        icon: 'assets/icons/laravel.png'
+        icon: 'assets/icons/aws-48.png',
+        size: 'aws-logo-size'
+    },
+    {
+        name: 'Serverless',
+        fontColor: 'text-serverless',
+        icon: 'assets/icons/serverless-48.png'
     }
+    // {
+    //     name: 'Laravel',
+    //     fontColor: 'text-laravel',
+    //     icon: 'assets/icons/laravel.png'
+    // }
 ];

@@ -20,24 +20,14 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { SectionProjectsComponent } from './components/section-projects/section-projects.component';
 import { SectionIntroComponent } from './components/section-intro/section-intro.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
-import { SharedModule } from './shared/shared.module';
+import { ComponentsModule } from './components/components.module';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        HomeComponent,
-        SectionAboutComponent,
-        SectionContactComponent,
-        SectionSkillsComponent,
-        CarouselComponent,
-        SectionProjectsComponent,
-        SectionIntroComponent,
-        TimelineComponent
-    ],
+    declarations: [AppComponent, HomeComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
@@ -55,7 +45,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         RouterModule,
         BrowserAnimationsModule,
         CarouselModule,
-        SharedModule
+        ComponentsModule
     ],
     providers: [],
     bootstrap: [AppComponent],

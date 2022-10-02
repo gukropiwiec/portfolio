@@ -32,7 +32,7 @@
         </div>
         <div class="row mt-5 text-center justify-content-center">
             <div class="col-6 col-sm-4 col-md-3 my-3 my-md-5" *ngFor="let technology of technologies">
-                <img class="img-techs" src="{{ technology.icon }}">
+                <img class="{{ technology.size || 'img-techs'}}" src="{{ technology.icon }}">
                 <br>
                 <span class="{{ technology.fontColor }} fw-bold">{{ technology.name }}</span>
             </div>
