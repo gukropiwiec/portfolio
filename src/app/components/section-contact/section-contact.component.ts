@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import {
+    faExternalLinkAlt,
+    faDownload
+} from '@fortawesome/free-solid-svg-icons';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -9,6 +12,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class SectionContactComponent {
     faExternalLinkAlt = faExternalLinkAlt;
+    faDownload = faDownload;
 
     constructor(private translateS: TranslateService) {}
 
