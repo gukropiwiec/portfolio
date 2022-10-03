@@ -47,3 +47,9 @@
     width: 59px;
     size: 35px;
 }
+
+@media (min-width: 768px) {
+    .border-right-desktop {
+        border-right: 1px solid #ffffff42;
+    }
+}
