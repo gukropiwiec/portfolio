@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { faMobileAlt } from '@fortawesome/free-solid-svg-icons';
-import { technologies } from 'src/app/shared/technologies';
+import {
+    technologiesFrontend,
+    technologiesBackend
+} from 'src/app/shared/technologies';
 
 @Component({
     selector: 'app-section-skills',
@@ -9,7 +12,8 @@ import { technologies } from 'src/app/shared/technologies';
 })
 export class SectionSkillsComponent {
     faMobileAlt = faMobileAlt;
-    technologies = technologies;
+    technologiesFrontend = technologiesFrontend;
+    technologiesBackend = technologiesBackend;
 
     constructor() {}
 }

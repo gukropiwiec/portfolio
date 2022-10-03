@@ -35,6 +35,9 @@
     --rpc-light-mode: #115585;
     --rpc: #1c81c9;
     --serverless: #f16d61;
+    --python: #0277bd;
+    --aws: #ec912d;
+    --sql: #eab55b;
 }
 
 .container {
@@ -147,6 +150,18 @@ li {
 
 .text-serverless {
     color: var(--serverless);
+}
+
+.text-python {
+    color: var(--python);
+}
+
+.text-aws {
+    color: var(--aws);
+}
+
+.text-sql {
+    color: var(--sql);
 }
 
 // BACKGROUNDS
