@@ -10,12 +10,6 @@
         "zIndex": -1
     },
     "interactivity": {
-        "events": {
-            "onHover": {
-                "enable": true,
-                "mode": "bubble"
-            }
-        },
         "modes": {
             "bubble": {
                 "distance": 400,
