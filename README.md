@@ -40,66 +40,65 @@
 <br><br>
 
 ## About The Project
+
 ![gukropiwiec-portfolio-intro](https://user-images.githubusercontent.com/59800105/147139226-57ce0068-8e57-400e-917d-019454c48c79.gif)
 
-
-
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 ### Built With
 
-* [Angular](https://angular.io/)
-* [Bootstrap](https://getbootstrap.com)
+-   [Angular](https://angular.io/)
+-   [Bootstrap](https://getbootstrap.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
 ## Run this project locally
+
 If you want to run this project locally, you can follow the step-by-step:
 
 ### Prerequisites
 
-* npm
-* git
-* Angular CLI
-  ```sh
-  npm install -g @angular/cli
-  ```
+-   npm
+-   git
+-   Angular CLI
+    ```sh
+    npm install -g @angular/cli
+    ```
 
 ### Installation
 
 1. Clone the repo
-   ```sh
-   git clone https://github.com/gukropiwiec/portfolio.git
-   ```
+    ```sh
+    git clone https://github.com/gukropiwiec/portfolio.git
+    ```
 2. Install NPM packages
-   ```sh
-   npm install
-   ```
+    ```sh
+    npm install
+    ```
 3. Launch the server
-   ```sh
-   ng serve -o
-   ```
+    ```sh
+    ng serve -o
+    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
+
 ## Contact
 
 Gustavo Kropiwiec - gustavosk17@gmail.com
 
-
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
+
 ## Acknowledgments
 
-* [Font Awesome](https://fontawesome.com)
+-   [Font Awesome](https://fontawesome.com)
+-   [tsParticles](https://particles.js.org/)
+-   [Icons8](https://icons8.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
