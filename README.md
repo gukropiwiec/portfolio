@@ -77,7 +77,7 @@ If you want to run this project locally, you can follow the step-by-step:
     ```
 3. Launch the server
     ```sh
-    ng serve -o
+    npm start
     ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>

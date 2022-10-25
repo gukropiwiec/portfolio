@@ -19,7 +19,10 @@
     </ul>
     <ul class="navbar-nav mx-auto" *ngIf="currentUrl !== '/'">
         <li class="nav-item center-nav">
-            <a class="nav-link cursor-pointer" [routerLink]="['/']" routerLinkActive="router-link-active">Home</a>
+            <a class="nav-link cursor-pointer" [routerLink]="['/']" routerLinkActive="router-link-active">{{ 'Home' | translate }}</a>
+        </li>
+        <li class="nav-item center-nav" *ngIf="currentUrl.includes('projects/')">
+            <a class="nav-link cursor-pointer" [routerLink]="['/projects']" routerLinkActive="router-link-active">{{ 'Projects' | translate }}</a>
         </li>
     </ul>
     <span *ngIf="currentColorMode === 'dark'" class="d-flex me-4" tabindex="0" data-bs-toggle="tooltip" title="{{ 'Change to light mode' | translate }}">
@@ -80,7 +83,7 @@
                 <button class="btn btn-outline-light dropdown-toggle float-end me-4" type="button" id="dropDownNavTopCell" data-bs-toggle="dropdown" aria-expanded="false">
                     Menu
                 </button>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropDownNavTopCell" *ngIf="currentUrl !== '/'">
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropDownNavTopCell">
                     <li class="nav-item">
                         <a class="nav-link dropdown-item" routerLinkActive="router-link-active" (click)="navigateHome()">{{ 'Home' | translate }}</a>
                     </li>

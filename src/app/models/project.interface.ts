@@ -8,4 +8,5 @@ export interface Project {
     codeHref?: string;
     techs: Technology[];
     externalLinkTitle: string;
+    detailUrl?: string;
 }

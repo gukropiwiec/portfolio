@@ -1,11 +1,12 @@
 import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import {
     faCode,
     faExternalLinkAlt,
     faInfo
 } from '@fortawesome/free-solid-svg-icons';
 import { Project } from 'src/app/models/project.interface';
-import { enableTooltips } from 'src/app/shared/functions';
+import { enableTooltips, hideAllTooltips } from 'src/app/shared/functions';
 
 @Component({
     selector: 'app-project-box',
@@ -19,7 +20,7 @@ export class ProjectBoxComponent implements AfterViewInit {
     faExternalLinkAlt = faExternalLinkAlt;
     faInfo = faInfo;
 
-    constructor() {}
+    constructor(private router: Router) {}
 
     ngAfterViewInit(): void {
         enableTooltips();
@@ -29,6 +30,19 @@ export class ProjectBoxComponent implements AfterViewInit {
         if (!link) {
             return;
         }
+        hideAllTooltips();
         window.open(link, '_blank');
+    }
+
+    navigateToDetails(detailUrl: string | undefined): void {
+        if (!detailUrl) {
+            return;
+        }
+        hideAllTooltips();
+        this.router.navigateByUrl(`projects/${detailUrl}`);
+    }
+
+    hideTooltips() {
+        hideAllTooltips();
     }
 }

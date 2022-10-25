@@ -7,22 +7,22 @@
   	</div>
   	<div class="row mb-3 row-icons">
     	<div class="col-4 text-end">
-      	<span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="{{ project.externalLinkTitle | translate }}">
+      	<span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="{{ project.externalLinkTitle | translate }}" (click)="hideTooltips()">
         	<button class="btn btn-sm btn-outline-light btn-theme btn-project-item" [disabled]="!project.href" (click)="openLink(project.href)">
           	<fa-icon [icon]="faExternalLinkAlt"></fa-icon>
         	</button>
       	</span>
     	</div>
     	<div class="col-4 text-center">
-      	<span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="{{ project.codeHref ? ('See the code on GitHub' | translate) : ('Code private' | translate) }}">
+      	<span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="{{ project.codeHref ? ('See the code on GitHub' | translate) : ('Code private' | translate) }}" (click)="hideTooltips()">
         	<button class="btn btn-sm btn-outline-light btn-theme btn-project-item" [disabled]="!project.codeHref" (click)="openLink(project.codeHref)">
           	<fa-icon [icon]="faCode"></fa-icon>
         	</button>
       	</span>
     	</div>
     	<div class="col-4 text-start">
-      	<span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="{{ 'See more about this project' | translate }}">
-        	<button class="btn btn-sm btn-outline-light btn-theme btn-project-item">
+      	<span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="{{  project.detailUrl ? ('See more about this project' | translate) : ('Details in development' | translate) }}" (click)="hideTooltips()">
+        	<button class="btn btn-sm btn-outline-light btn-theme btn-project-item" [disabled]="!project.detailUrl" (click)="navigateToDetails(project.detailUrl)">
           	<fa-icon [icon]="faInfo"></fa-icon>
         	</button>
       	</span>

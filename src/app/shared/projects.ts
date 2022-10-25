@@ -9,6 +9,7 @@ export const mainProjects: Project[] = [
         title: 'Banner Esalflores',
         href: 'https://www.esalflores.com.br/',
         externalLinkTitle: 'Open website',
+        detailUrl: 'esalflores',
         techs: [
             { name: 'Angular', fontColor: 'text-angular' },
             { name: 'Bootstrap', fontColor: 'text-bootstrap' },
