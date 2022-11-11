@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { projects } from 'src/app/shared/projects';
 
 @Component({
     selector: 'app-esalflores',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
     styleUrls: ['./esalflores.component.scss']
 })
 export class EsalfloresComponent {
+    project = projects['esalflores'];
+
     constructor() {}
 }

@@ -1,0 +1,9 @@
+<div class="card card-section">
+    <div class="card-body">
+        <div class="row text-center">
+            <div *ngFor="let tech of techs" class="col">
+                <app-tech-item [tech]="tech"></app-tech-item>
+            </div>
+        </div>
+    </div>
+</div>

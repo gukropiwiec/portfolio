@@ -10,16 +10,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { SectionAboutComponent } from './components/section-about/section-about.component';
-import { SectionContactComponent } from './components/section-contact/section-contact.component';
-import { SectionSkillsComponent } from './components/section-skills/section-skills.component';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { CarouselComponent } from './components/carousel/carousel.component';
-import { SectionProjectsComponent } from './components/section-projects/section-projects.component';
-import { SectionIntroComponent } from './components/section-intro/section-intro.component';
-import { TimelineComponent } from './components/timeline/timeline.component';
 import { ComponentsModule } from './components/components.module';
 
 export function HttpLoaderFactory(http: HttpClient) {

@@ -1,93 +1,113 @@
 import { Project } from '../models/project.interface';
+import { technologies } from './technologies';
+
+enum ExternalLinkTitles {
+    OpenWebsite = 'Open website',
+    PrivatePreview = 'Live preview private',
+    GooglePlay = 'Open on Google Play',
+    OpenDemo = 'Open demo',
+    DemoInDevelopment = 'Demo in development'
+}
 
 const imagesPath = 'assets/images/';
 
-export const mainProjects: Project[] = [
-    {
+export const projects: { [name: string]: Project } = {
+    esalflores: {
+        name: 'Esalflores',
         src: imagesPath + 'esalflores.png',
         alt: 'Banner Esalflores',
         title: 'Banner Esalflores',
         href: 'https://www.esalflores.com.br/',
-        externalLinkTitle: 'Open website',
+        externalLinkTitle: ExternalLinkTitles.OpenWebsite,
         detailUrl: 'esalflores',
         techs: [
-            { name: 'Angular', fontColor: 'text-angular' },
-            { name: 'Bootstrap', fontColor: 'text-bootstrap' },
-            { name: 'Laravel', fontColor: 'text-laravel' }
+            technologies['angular'],
+            technologies['bootstrap'],
+            technologies['laravel']
         ]
     },
-    {
+    orion: {
+        name: 'Orion',
         src: imagesPath + 'orion.png',
         alt: 'Banner Orion',
         title: 'Banner Orion',
-        externalLinkTitle: 'Live preview private',
-        techs: [
-            { name: 'Angular', fontColor: 'text-angular' },
-            { name: 'Bootstrap', fontColor: 'text-bootstrap' }
-        ]
+        externalLinkTitle: ExternalLinkTitles.PrivatePreview,
+        techs: [technologies['angular'], technologies['bootstrap']]
     },
-    {
+    esalcorp: {
+        name: 'Esalcorp',
         src: imagesPath + 'esalcorp.png',
         alt: 'Esalcorp App',
         title: 'Esalcorp App',
         href: 'https://play.google.com/store/apps/details?id=br.com.esal.esalcorp',
-        externalLinkTitle: 'Open on Google Play',
+        externalLinkTitle: ExternalLinkTitles.GooglePlay,
         techs: [
-            { name: 'Ionic', fontColor: 'text-ionic' },
-            { name: 'Angular', fontColor: 'text-angular' },
-            { name: 'Bootstrap', fontColor: 'text-bootstrap' }
+            technologies['ionic'],
+            technologies['angular'],
+            technologies['bootstrap']
         ]
     },
-    {
+    esalpet: {
+        name: 'Esalpet',
         src: imagesPath + 'esalpet.png',
         alt: 'Banner Esalpet',
         title: 'Banner Esalpet',
         href: 'https://www.esalpet.com.br/',
-        externalLinkTitle: 'Live preview private',
+        externalLinkTitle: ExternalLinkTitles.OpenWebsite,
         techs: [
-            { name: 'Angular', fontColor: 'text-angular' },
-            { name: 'Bootstrap', fontColor: 'text-bootstrap' },
-            { name: 'Laravel', fontColor: 'text-laravel' }
+            technologies['angular'],
+            technologies['bootstrap'],
+            technologies['laravel']
         ]
-    }
-];
-
-export const otherProjects: Project[] = [
-    {
+    },
+    currencyExchangeApp: {
+        name: 'Currency Exchange App',
         src: imagesPath + 'currency-exchange-app.png',
         alt: 'Exchange currency to BRL',
         title: 'Exchange currency to BRL',
         href: 'https://gukropiwiec.github.io/currency-exchange-to-brl',
         codeHref: 'https://github.com/gukropiwiec/currency-exchange-to-brl',
-        externalLinkTitle: 'Open demo',
-        techs: [
-            { name: 'Ionic', fontColor: 'text-ionic' },
-            { name: 'Angular', fontColor: 'text-angular' }
-        ]
+        externalLinkTitle: ExternalLinkTitles.OpenDemo,
+        techs: [technologies['ionic'], technologies['angular']]
     },
-    {
+    realtimeChatApp: {
+        name: 'Realtime Chat App',
         src: imagesPath + 'realtime-chat-app.png',
         alt: 'Realtime Chat app using Firebase',
         title: 'Realtime Chat app using Firebase',
         codeHref: 'https://github.com/gukropiwiec/chat-firebase',
-        externalLinkTitle: 'Demo in development',
+        externalLinkTitle: ExternalLinkTitles.DemoInDevelopment,
         techs: [
-            { name: 'Firebase', fontColor: 'text-firebase' },
-            { name: 'Ionic', fontColor: 'text-ionic' },
-            { name: 'Angular', fontColor: 'text-angular' }
+            technologies['firebase'],
+            technologies['ionic'],
+            technologies['angular']
         ]
     },
-    {
+    plantingTrees: {
+        name: 'Planting Trees',
         src: imagesPath + 'planting-trees.png',
         alt: 'Planting Trees Project',
         title: 'Planting Trees Project',
         codeHref: 'https://github.com/gukropiwiec/rest-api-planting-trees',
-        externalLinkTitle: 'Demo in development',
+        externalLinkTitle: ExternalLinkTitles.DemoInDevelopment,
         techs: [
-            { name: 'Ionic', fontColor: 'text-ionic' },
-            { name: 'Angular', fontColor: 'text-angular' },
-            { name: 'NodeJS', fontColor: 'text-nodejs' },
-            { name: 'MongoDB', fontColor: 'text-mongo-db' }
+            technologies['ionic'],
+            technologies['angular'],
+            technologies['nodejs'],
+            technologies['mongodb']
         ]
     }
+};
+
+export const mainProjects: Project[] = [
+    projects['esalflores'],
+    projects['orion'],
+    projects['esalcorp'],
+    projects['esalpet']
+];
+
+export const otherProjects: Project[] = [
+    projects['currencyExchangeApp'],
+    projects['realtimeChatApp'],
+    projects['plantingTrees']
 ];

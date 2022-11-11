@@ -1,9 +1,10 @@
 import { Technology } from './technology.interface';
 
 export interface Project {
-    src: String;
-    alt: String;
-    title: String;
+    name: string;
+    src: string;
+    alt: string;
+    title: string;
     href?: string;
     codeHref?: string;
     techs: Technology[];
