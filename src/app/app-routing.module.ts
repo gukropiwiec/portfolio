@@ -10,8 +10,8 @@ const routes: Routes = [
             import('./pages/projects-detail/projects-detail.module').then(
                 (m) => m.ProjectsDetailModule
             )
-    },
-    { path: '**', redirectTo: '/' }
+    }
+    // { path: '**', redirectTo: '/' }
 ];
 
 @NgModule({

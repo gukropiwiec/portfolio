@@ -1,5 +1,5 @@
 <div class="project-item-wrapper mx-auto">
-  	<img [src]="project.src" [alt]="project.alt" [title]="project.title">
+  	<img [src]="project.mainImgSrc" [alt]="project.alt" [title]="project.title">
   	<div class="row row-techs my-3">
     	<div class="col text-center" *ngFor="let tech of project.techs">
       	<span class="{{ tech.fontColor }} fw-bold">{{ tech.name }}</span>
