@@ -164,15 +164,6 @@ li {
     color: var(--sql);
 }
 
-// BACKGROUNDS
-.bg-purple-alpha {
-    background-color: var(--purple-alpha) !important;
-}
-
-.bg-gray-alpha {
-    background-color: var(--gray-alpha) !important;
-}
-
 .nav-left,
 .nav-right {
     position: absolute !important;
@@ -211,6 +202,29 @@ li {
 input,
 textarea {
     color: white !important;
+}
+
+.mt-header {
+    margin-top: 80px;
+}
+
+.text-clicable:hover {
+    color: var(--purple);
+}
+
+@media (min-width: 768px) {
+    .border-right-desktop {
+        border-right: 1px solid #ffffff42;
+    }
+}
+
+// BACKGROUNDS
+.bg-purple-alpha {
+    background-color: var(--purple-alpha) !important;
+}
+
+.bg-gray-alpha {
+    background-color: var(--gray-alpha) !important;
 }
 
 // LIGHT MODE
@@ -256,8 +270,10 @@ textarea {
     .text-tpc {
         color: var(--rpc-light-mode);
     }
-}
 
-.text-clicable:hover {
-    color: var(--purple);
+    @media (min-width: 768px) {
+        .border-right-desktop {
+            border-right: 1px solid #00000060;
+        }
+    }
 }

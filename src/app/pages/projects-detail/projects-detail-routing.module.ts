@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { EsalfloresComponent } from './esalflores/esalflores.component';
+import { DetailComponent } from './detail/detail.component';
 import { ProjectsDetailComponent } from './projects-detail.component';
 
 const routes: Routes = [
     { path: '', component: ProjectsDetailComponent },
-    { path: 'esalflores', component: EsalfloresComponent }
+    { path: ':name', component: DetailComponent }
 ];
 
 @NgModule({

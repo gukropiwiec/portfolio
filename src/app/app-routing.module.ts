@@ -5,13 +5,13 @@ import { HomeComponent } from './pages/home/home.component';
 const routes: Routes = [
     { path: '', component: HomeComponent },
     {
-        path: 'projects-detail',
+        path: 'projects',
         loadChildren: () =>
             import('./pages/projects-detail/projects-detail.module').then(
                 (m) => m.ProjectsDetailModule
             )
-    },
-    { path: '**', redirectTo: '/' }
+    }
+    // { path: '**', redirectTo: '/' }
 ];
 
 @NgModule({

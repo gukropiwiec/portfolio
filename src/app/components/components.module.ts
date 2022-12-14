@@ -14,6 +14,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ProjectBoxComponent } from './project-box/project-box.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { CardTechnologiesComponent } from './card-technologies/card-technologies.component';
+import { TechItemComponent } from './tech-item/tech-item.component';
 
 const moduleComponents = [
     CarouselComponent,
@@ -25,7 +27,9 @@ const moduleComponents = [
     TimelineComponent,
     ProjectBoxComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    CardTechnologiesComponent,
+    TechItemComponent
 ];
 
 @NgModule({

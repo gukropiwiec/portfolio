@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, Input } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Project } from 'src/app/models/project.interface';
-import { carouselOptions } from './carousel-options';
+import { carouselOptions } from '../../shared/carousel-options';
 
 @Component({
     selector: 'app-carousel',
@@ -8,14 +9,20 @@ import { carouselOptions } from './carousel-options';
     styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent implements AfterViewInit {
-    @Input() slides: Project[] = [];
+    @Input() projectSlides: Project[] | undefined = [];
+    @Input() imgSlides: string[] | undefined = [];
+    @Input() optionsOverride!: OwlOptions;
 
-    carouselOptions = carouselOptions;
+    carouselOptions: OwlOptions = {};
 
     constructor() {}
 
     ngAfterViewInit(): void {
         this.positionNavs();
+        this.carouselOptions = {
+            ...carouselOptions,
+            ...this.optionsOverride
+        };
     }
 
     positionNavs(): void {
