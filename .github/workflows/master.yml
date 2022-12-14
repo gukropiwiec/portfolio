@@ -22,4 +22,4 @@ jobs:
             - name: Deploy with GH Pages
               env:
                   GH_TOKEN: ${{ secrets.GH_TOKEN }}
-              run: npm run ng -- deploy --name="Gustavo Kropiwiec" --email=gustavosk17@hotmail.com --no-silent
+              run: npm run ng -- deploy --name="Gustavo Kropiwiec" --email=gustavosk17@hotmail.com
