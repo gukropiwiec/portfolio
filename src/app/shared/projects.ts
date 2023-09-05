@@ -25,10 +25,7 @@ export const projects: { [name: string]: Project } = {
             technologies['bootstrap'],
             technologies['laravel']
         ],
-        images: [
-            `${imagesPath}/esalflores.png`,
-            `${imagesPath}/esalflores.png`,
-        ]
+        images: [`${imagesPath}/esalflores.png`, `${imagesPath}/esalflores.png`]
     },
     orion: {
         name: 'Orion',
