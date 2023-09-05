@@ -10,5 +10,14 @@
         "RPC1": "RPC is a television network, being the largest affiliate of Rede Globo, covering the entire state of Paraná.",
         "RPC2": "My main responsibility is to develop new applications and ensure the stability of the company's systems, performing serverless deployments and creating Lambda functions on AWS."
     },
+    "ProjectDetailDescription": {
+        "esalflores": "Test",
+        "orion": "",
+        "esalcorp": "",
+        "esalpet": "",
+        "currency-exchange-app": "",
+        "realtime-chat-app": "",
+        "planting-trees": ""
+    },
     "Curriculum Vitae": "assets/documents/GustavoKropiwiec-CV.pdf"
 }

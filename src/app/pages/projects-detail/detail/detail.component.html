@@ -1,7 +1,15 @@
 <div class="container justify-content-center mt-header animate__animated animate__fadeIn animate__slow">
     <section class="mt-5">
         <h1 class="border-bottom">{{ project.name }}</h1>
-        <app-card-technologies [techs]="project.techs"></app-card-technologies>
-        <app-carousel [imgSlides]="project.images" [optionsOverride]="carouselOptionsOverride"></app-carousel>
+        <div *ngIf="project.images && project.images.length < 3">
+            <img *ngFor="let image of project.images" src="{{ image }}" alt="{{ project.name }}">
+        </div>
+        <div *ngIf="project.images && project.images.length >= 3">
+            <app-carousel [imgSlides]="project.images" [optionsOverride]="carouselOptionsOverride"></app-carousel>
+        </div>
+        <div class="mb-2">
+            <app-card-technologies [techs]="project.techs"></app-card-technologies>
+        </div>
+        <article innerHTML="{{ projectDescription | translate }}"></article>
     </section>
 </div>

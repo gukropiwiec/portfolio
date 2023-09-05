@@ -212,6 +212,22 @@ textarea {
     color: var(--purple);
 }
 
+
+.img-skills {
+    width: 58px;
+}
+
+.img-techs {
+    width: 48px;
+    height: 48px;
+}
+
+.aws-logo-size {
+    width: 59px;
+    size: 35px;
+}
+
+
 @media (min-width: 768px) {
     .border-right-desktop {
         border-right: 1px solid #ffffff42;

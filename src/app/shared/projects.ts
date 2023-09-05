@@ -28,8 +28,6 @@ export const projects: { [name: string]: Project } = {
         images: [
             `${imagesPath}/esalflores.png`,
             `${imagesPath}/esalflores.png`,
-            `${imagesPath}/esalflores.png`,
-            `${imagesPath}/esalflores.png`
         ]
     },
     orion: {
