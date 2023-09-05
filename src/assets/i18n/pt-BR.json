@@ -27,6 +27,15 @@
         "RPC1": "RPC é uma rede de televisão, sendo a maior afiliada da Rede Globo, tendo cobertura por todo o estado do Paraná.",
         "RPC2": "Minha principal responsabilidade é desenvolver novas aplicações e garantir a boa estabilidade dos sistemas da empresa, realizando deploys com serverless e criação de funções Lambda na AWS."
     },
+    "ProjectDetailDescription": {
+        "esalflores": "<strong>Tests</strong>",
+        "orion": "",
+        "esalcorp": "",
+        "esalpet": "",
+        "currency-exchange-app": "",
+        "realtime-chat-app": "",
+        "planting-trees": ""
+    },
     "Have some questions? Get in touch!": "Tem alguma pergunta? Entre em contato!",
     "Name": "Nome",
     "Subject": "Assunto",

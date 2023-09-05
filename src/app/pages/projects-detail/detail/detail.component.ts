@@ -11,6 +11,7 @@ import { projects } from 'src/app/shared/projects';
 })
 export class DetailComponent {
     project!: Project;
+    projectDescription: string = '';
     carouselOptionsOverride: OwlOptions = {
         dots: true,
         nav: false,
@@ -23,6 +24,7 @@ export class DetailComponent {
                 this.router.navigateByUrl('/projects');
             } else {
                 this.project = projects[params['name']];
+                this.projectDescription = `ProjectDetailDescription.${params['name']}`;
             }
         });
     }
