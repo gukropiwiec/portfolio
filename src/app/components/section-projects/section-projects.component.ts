@@ -7,8 +7,8 @@ import { mainProjects, otherProjects } from 'src/app/shared/projects';
     styleUrls: ['./section-projects.component.scss']
 })
 export class SectionProjectsComponent {
-    mainProjects = mainProjects;
-    otherProjects = otherProjects;
+    mainProjects = mainProjects.filter((el) => el.active);
+    otherProjects = otherProjects.filter((el) => el.active);
 
     constructor() {}
 }

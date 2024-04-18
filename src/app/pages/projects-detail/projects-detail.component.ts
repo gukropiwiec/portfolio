@@ -13,7 +13,10 @@ export class ProjectsDetailComponent implements OnInit, AfterViewInit {
     constructor() {}
 
     ngOnInit(): void {
-        this.projects = [...mainProjects, ...otherProjects];
+        this.projects = [
+            ...mainProjects.filter((el) => el.active),
+            ...otherProjects.filter((el) => el.active)
+        ];
     }
 
     ngAfterViewInit(): void {

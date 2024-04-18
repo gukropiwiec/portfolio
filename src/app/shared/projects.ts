@@ -25,7 +25,11 @@ export const projects: { [name: string]: Project } = {
             technologies['bootstrap'],
             technologies['laravel']
         ],
-        images: [`${imagesPath}/esalflores.png`, `${imagesPath}/esalflores.png`]
+        images: [
+            `${imagesPath}/esalflores.png`,
+            `${imagesPath}/esalflores.png`
+        ],
+        active: true
     },
     orion: {
         name: 'Orion',
@@ -34,7 +38,8 @@ export const projects: { [name: string]: Project } = {
         title: 'Banner Orion',
         externalLinkTitle: ExternalLinkTitles.PrivatePreview,
         detailUrl: 'orion',
-        techs: [technologies['angular'], technologies['bootstrap']]
+        techs: [technologies['angular'], technologies['bootstrap']],
+        active: true
     },
     esalcorp: {
         name: 'Esalcorp',
@@ -48,7 +53,8 @@ export const projects: { [name: string]: Project } = {
             technologies['ionic'],
             technologies['angular'],
             technologies['bootstrap']
-        ]
+        ],
+        active: true
     },
     esalpet: {
         name: 'Esalpet',
@@ -62,7 +68,8 @@ export const projects: { [name: string]: Project } = {
             technologies['angular'],
             technologies['bootstrap'],
             technologies['laravel']
-        ]
+        ],
+        active: false
     },
     'currency-exchange-app': {
         name: 'Currency Exchange App',
@@ -73,7 +80,8 @@ export const projects: { [name: string]: Project } = {
         codeHref: 'https://github.com/gukropiwiec/currency-exchange-to-brl',
         externalLinkTitle: ExternalLinkTitles.OpenDemo,
         detailUrl: 'currency-exchange-app',
-        techs: [technologies['ionic'], technologies['angular']]
+        techs: [technologies['ionic'], technologies['angular']],
+        active: true
     },
     'realtime-chat-app': {
         name: 'Realtime Chat App',
@@ -87,7 +95,8 @@ export const projects: { [name: string]: Project } = {
             technologies['firebase'],
             technologies['ionic'],
             technologies['angular']
-        ]
+        ],
+        active: true
     },
     'planting-trees': {
         name: 'Planting Trees',
@@ -102,7 +111,8 @@ export const projects: { [name: string]: Project } = {
             technologies['angular'],
             technologies['nodejs'],
             technologies['mongodb']
-        ]
+        ],
+        active: true
     }
 };
 
