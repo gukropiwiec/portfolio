@@ -38,6 +38,7 @@
     --python: #0277bd;
     --aws: #ec912d;
     --sql: #eab55b;
+    --reali: #1982e8;
 }
 
 .container {
@@ -162,6 +163,10 @@ li {
 
 .text-sql {
     color: var(--sql);
+}
+
+.text-reali {
+    color: var(--reali);
 }
 
 .nav-left,

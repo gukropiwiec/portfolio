@@ -12,4 +12,5 @@ export interface Project {
     externalLinkTitle: ExternalLinkTitles;
     detailUrl?: string;
     images?: string[];
+    active: boolean;
 }

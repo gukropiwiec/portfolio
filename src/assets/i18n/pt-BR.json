@@ -1,5 +1,6 @@
 {
     "Software Engineer": "Engenheiro de Software",
+    "Software Developer": "Desenvolvedor de Software",
     "Projects": "Projetos",
     "Contact": "Contato",
     "Contact me!": "Contato",
@@ -17,7 +18,7 @@
     "November": "Novembro",
     "Present": "Hoje",
     "AboutDescription": {
-        "summary": "Com quase 2 anos de experiência em Angular, atuei no desenvolvimento do e-commerce de uma grande floricultura que conta com milhares de visitas diárias, além do desenvolvimento de aplicativos utilizando Ionic. <br> Atualmente estou trabalhando em um projeto de telefonia PABX e realizando a manutenção do e-commerce que desenvolvi. <br> Gosto muito de estar atualizado e sempre buscando novos desafios e aprendizados.",
+        "summary": "Sou desenvolvedor web full-stack, com mais de 4 anos de experiência em desenvolvimento. Atuei no desenvolvimento do e-commerce de uma grande floricultura que contém milhares de visitar diárias, além do desenvolvimento de aplicativos utilizando Ionic. Atualmente estou trabalhando em projetos utilizando React e NodeJS. Gosto muito de estar atualizado e sempre buscando novos desafios e aprendizados.",
         "DBM1": "Atuação como desenvolvedor front-end na criação de um sistema PBX.",
         "DBM2": "Tecnologias usadas: Angular com Bootstrap",
         "Esal1": "Desenvolvi o aplicativo Esalcorp, que é usado para gerenciamento interno do estoque da empresa, usando Ionic com Angular.",
@@ -25,7 +26,8 @@
         "Korp1": "Desenvolvi e realizei manutenção do sistema ERP, SQL queries e testes unitários.",
         "Korp2": "Como estagiário, minha principal tarefa era escrever SQL queries e garantir a boa funcionalide do sistema.",
         "RPC1": "RPC é uma rede de televisão, sendo a maior afiliada da Rede Globo, tendo cobertura por todo o estado do Paraná.",
-        "RPC2": "Minha principal responsabilidade é desenvolver novas aplicações e garantir a boa estabilidade dos sistemas da empresa, realizando deploys com serverless e criação de funções Lambda na AWS."
+        "RPC2": "Minha principal responsabilidade é desenvolver novas aplicações e garantir a boa estabilidade dos sistemas da empresa, realizando deploys com serverless e criação de funções Lambda na AWS.",
+        "Reali1": "Atuação como desenvolvedor de software para criação de módulos no Odoo, para integração com os clientes da empresa."
     },
     "ProjectDetailDescription": {
         "esalflores": "<strong>Tests</strong>",
