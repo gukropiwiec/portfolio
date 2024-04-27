@@ -1,9 +1,8 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { faCode, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Project } from 'src/app/models/project.interface';
-import { enableTooltips, hideAllTooltips } from 'src/app/shared/functions';
+import { enableTooltips } from 'src/app/shared/functions';
 import { projects } from 'src/app/shared/projects';
 
 @Component({
@@ -29,11 +28,6 @@ export class DetailComponent implements AfterViewInit {
             }
         }
     };
-    faCode = faCode;
-    faExternalLinkAlt = faExternalLinkAlt;
-
-    showModal: boolean = false;
-    zoomedImage: string = '';
 
     constructor(route: ActivatedRoute, private router: Router) {
         route.params.subscribe((params) => {
@@ -48,28 +42,5 @@ export class DetailComponent implements AfterViewInit {
 
     ngAfterViewInit(): void {
         enableTooltips();
-    }
-
-    openModal(image: string) {
-        if (innerWidth >= 992) {
-            this.zoomedImage = image;
-            this.showModal = true;
-        }
-    }
-
-    closeModal() {
-        this.showModal = false;
-    }
-
-    openLink(link: string | undefined): void {
-        if (!link) {
-            return;
-        }
-        hideAllTooltips();
-        window.open(link, '_blank');
-    }
-
-    hideTooltips() {
-        hideAllTooltips();
     }
 }
