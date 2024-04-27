@@ -30,7 +30,7 @@
         "Reali1": "Atuação como desenvolvedor de software para criação de módulos no Odoo, para integração com os clientes da empresa."
     },
     "ProjectDetailDescription": {
-        "esalflores": "<strong>Tests</strong>",
+        "esalflores": "Este projeto foi bastante desafiador, eu estava apenas iniciando minha carreira, então precisei me dedicar bastante para aprender sobre o <span class=\"text-angular fw-bold\">Angular</span>. <br><br> Alguns pontos que aprendi durante este projeto: <ul> <li>Segurança da informação</li> <li>Gestão de checkout</li> <li>Pagamentos on-line (Gateways de pagamento)</li> <li>Local storage para persistência temporária de algumas informações</li> <li>Detalhes do <span class=\"text-angular fw-bold\">Angular</span></li> <li>Backend usando <span class=\"text-laravel fw-bold\">Laravel</span></li> </ul> <br> O design do projeto foi desenvolvido por designers da empresa, fui encarregado de passar o design para o <span class=\"text-angular fw-bold\">Angular</span>.",
         "orion": "",
         "esalcorp": "",
         "esalpet": "",

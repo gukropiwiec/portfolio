@@ -1,0 +1,20 @@
+div {
+    font-size: 1.4rem;
+}
+
+.img-zoom {
+    border-radius: .25rem;
+    width: -webkit-fill-available;
+}
+
+.modal-dialog {
+    margin-top: 12.5vh;
+
+    .modal-content {
+        background-color: #362a39;
+
+        .modal-header {
+            border-bottom: none;
+        }
+    }
+}

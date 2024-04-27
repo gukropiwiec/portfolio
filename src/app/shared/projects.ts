@@ -26,8 +26,9 @@ export const projects: { [name: string]: Project } = {
             technologies['laravel']
         ],
         images: [
-            `${imagesPath}/esalflores.png`,
-            `${imagesPath}/esalflores.png`
+            `${imagesPath}/esalflores1.png`,
+            `${imagesPath}/esalflores2.png`,
+            `${imagesPath}/esalflores3.png`
         ],
         active: true
     },
