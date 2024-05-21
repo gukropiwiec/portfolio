@@ -55,6 +55,10 @@ export const projects: { [name: string]: Project } = {
             technologies['angular'],
             technologies['bootstrap']
         ],
+        images: [
+            `${imagesPath}/esalcorp1.webp`,
+            `${imagesPath}/esalcorp2.webp`
+        ],
         active: true
     },
     esalpet: {
@@ -114,6 +118,22 @@ export const projects: { [name: string]: Project } = {
             technologies['mongodb']
         ],
         active: true
+    },
+    'akon-engenharia': {
+        name: 'Akon Engenharia',
+        mainImgSrc: `${imagesPath}/akon.png`,
+        alt: 'Akon Engenharia Website',
+        title: 'Akon Engenharia Website',
+        codeHref: 'https://github.com/gukropiwiec/akonengenharia',
+        href: 'https://akonengenharia.com/',
+        externalLinkTitle: ExternalLinkTitles.OpenWebsite,
+        detailUrl: 'akon-engenharia',
+        techs: [
+            technologies['angular'],
+            technologies['bootstrap'],
+            technologies['typescript']
+        ],
+        active: true
     }
 };
 
@@ -121,7 +141,7 @@ export const mainProjects: Project[] = [
     projects['esalflores'],
     projects['orion'],
     projects['esalcorp'],
-    projects['esalpet']
+    projects['akon-engenharia']
 ];
 
 export const otherProjects: Project[] = [

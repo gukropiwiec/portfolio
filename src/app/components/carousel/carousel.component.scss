@@ -4,6 +4,8 @@
 
 img {
     border-radius: .25rem;
+    max-height: 450px;
+    object-fit: contain;
 }
 
 @media (min-width: 992px) {

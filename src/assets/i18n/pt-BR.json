@@ -18,7 +18,7 @@
     "November": "Novembro",
     "Present": "Hoje",
     "AboutDescription": {
-        "summary": "Sou desenvolvedor web full-stack, com mais de 4 anos de experiência em desenvolvimento. Atuei no desenvolvimento do e-commerce de uma grande floricultura que contém milhares de visitar diárias, além do desenvolvimento de aplicativos utilizando Ionic. Atualmente estou trabalhando em projetos utilizando React e NodeJS. Gosto muito de estar atualizado e sempre buscando novos desafios e aprendizados.",
+        "summary": "Sou desenvolvedor web full-stack, com mais de 5 anos de experiência em desenvolvimento. Atuei no desenvolvimento do e-commerce de uma grande floricultura que contém milhares de visitar diárias, além do desenvolvimento de aplicações utilizando <span class=\"fw-bold text-angular\">Angular</span>, <span class=\"fw-bold\">NextJS</span>, <span class=\"fw-bold text-laravel\">Laravel</span>, <span class=\"fw-bold text-python\">Python</span> e <span class=\"fw-bold text-aws\">AWS</span>, e de aplicativos utilizando <span class=\"fw-bold text-ionic\">Ionic</span>. <br><br> Atualmente estou trabalhando em projetos utilizando <span class=\"fw-bold text-angular\">Angular</span> e <span class=\"fw-bold text-python\">Python</span>. <br> Gosto muito de estar atualizado e sempre buscando novos desafios e aprendizados.",
         "DBM1": "Atuação como desenvolvedor front-end na criação de um sistema PBX.",
         "DBM2": "Tecnologias usadas: Angular com Bootstrap",
         "Esal1": "Desenvolvi o aplicativo Esalcorp, que é usado para gerenciamento interno do estoque da empresa, usando Ionic com Angular.",
@@ -31,12 +31,13 @@
     },
     "ProjectDetailDescription": {
         "esalflores": "Este projeto foi bastante desafiador, eu estava apenas iniciando minha carreira, então precisei me dedicar bastante para aprender sobre o <span class=\"text-angular fw-bold\">Angular</span>. <br><br> Alguns pontos que aprendi durante este projeto: <ul> <li>Segurança da informação</li> <li>Gestão de checkout</li> <li>Pagamentos on-line (Gateways de pagamento)</li> <li>Local storage para persistência temporária de algumas informações</li> <li>Detalhes do <span class=\"text-angular fw-bold\">Angular</span></li> <li>Backend usando <span class=\"text-laravel fw-bold\">Laravel</span></li> </ul> <br> O design do projeto foi desenvolvido por designers da empresa, fui encarregado de passar o design para o <span class=\"text-angular fw-bold\">Angular</span>.",
-        "orion": "",
-        "esalcorp": "",
+        "orion": "Atuação como Frontend no desenvolvimento do novo sistema de telefonia PBX utilizando <span class=\"text-angular fw-bold\">Angular</span> com <span class=\"text-bootstrap fw-bold\">Bootstrap</span>. Neste projeto fui responsável por garantir a integração fluida entre <span class=\"fw-bold\">Frontend</span> e <span class=\"fw-bold\">Backend</span>, assim como a criação de novas telas e responsividade.",
+        "esalcorp": "Este aplicativo corporativo foi desenvolvido para acompanhamento de entregas da empresa. Foi feita integração do aplicativo com o <span class=\"fw-bold\">ERP</span> da empresa para geração de informações automatizadas.<br><br>O aplicativo conta também com a parte de assinaturas do cliente que são salvas no <span class=\"fw-bold\">Google Cloud Storage</span>.",
         "esalpet": "",
         "currency-exchange-app": "",
         "realtime-chat-app": "",
-        "planting-trees": ""
+        "planting-trees": "",
+        "akon-engenharia": ""
     },
     "Have some questions? Get in touch!": "Tem alguma pergunta? Entre em contato!",
     "Name": "Nome",

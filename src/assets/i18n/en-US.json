@@ -1,6 +1,6 @@
 {
     "AboutDescription": {
-        "summary": "Working with web development since 2019, I developed apps using Ionic with Angular and an e-commerce website, which has thounsands of users per month.<br>I'm currently working on a PBX project and maintaining the e-commerce I developed. <br> I'm always looking to improve my skills and coding, and up for new challenges.",
+        "summary": "I'm a full-stack web developer, with over 5 years of development experience. I worked on the development of an e-commerce for a large flower shop that has thousands of daily visitors, in addition to developing applications using <span class=\"fw-bold text-angular\">Angular</span>, <span class=\"fw-bold\">NextJS</span>, <span class=\"fw-bold text-laravel\">Laravel</span>, <span class=\"fw-bold text-python\">Python </span> and <span class=\"fw-bold text-aws\">AWS</span>, and from applications using <span class=\"fw-bold text-ionic\">Ionic</span>. <br><br> I'm currently working on projects using <span class=\"fw-bold text-angular\">Angular</span> and <span class=\"fw-bold text-python\">Python</span>. <br> I'm always looking to improve my skills and coding, and up for new challenges.",
         "DBM1": "I worked as the lead front-end developer to create a new PBX system.",
         "DBM2": "Front-end technologies used: Angular with Bootstrap.",
         "Esal1": "Developed the Esalcorp app, which is used to manage the company’s internal inventory, using Ionic framework with Angular.",
@@ -13,12 +13,13 @@
     },
     "ProjectDetailDescription": {
         "esalflores": "This project was quite challenging, I was just starting my career, so I needed to dedicate myself a lot to learning about  <span class=\"text-angular fw-bold\">Angular</span>. <br><br> Some points I learned during this project: <ul> <li>Website security</li> <li>Checkout management</li> <li>On-line payments (payment gateways)</li> <li>Local storage for temporary persistence of some information</li> <li><span class=\"text-angular fw-bold\">Angular</span> details</li> <li>Backend using <span class=\"text-laravel fw-bold\">Laravel</span></li> </ul> <br> The project design was developed by the company's designers, I was tasked with transferring the design to <span class=\"text-angular fw-bold\">Angular</span>.",
-        "orion": "",
-        "esalcorp": "",
+        "orion": "Acting as Frontend in the development of the new PBX telephone system using <span class=\"text-angular fw-bold\">Angular</span> with <span class=\"text-bootstrap fw-bold\">Bootstrap</span>. In this project I was responsible for ensuring fluid integration between <span class=\"fw-bold\">Frontend</span> and <span class=\"fw-bold\">Backend</span>, as well as creating of new screens and responsiveness.",
+        "esalcorp": "This corporate application was developed to track company deliveries. The application was integrated with the company's <span class=\"fw-bold\">ERP</span> to generate automated information.<br><br>The application also includes customer signatures that are saved in <span class=\"fw-bold\">Google Cloud Storage</span>.",
         "esalpet": "",
         "currency-exchange-app": "",
         "realtime-chat-app": "",
-        "planting-trees": ""
+        "planting-trees": "",
+        "akon-engenharia": ""
     },
     "Curriculum Vitae": "assets/documents/GustavoKropiwiec-CV.pdf"
 }
