@@ -6,6 +6,7 @@ import { ProjectsDetailComponent } from './projects-detail.component';
 import { DetailComponent } from './detail/detail.component';
 import { ComponentsModule } from 'src/app/components/components.module';
 import { TranslateModule } from '@ngx-translate/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
     declarations: [ProjectsDetailComponent, DetailComponent],
@@ -13,7 +14,8 @@ import { TranslateModule } from '@ngx-translate/core';
         CommonModule,
         ProjectsDetailRoutingModule,
         ComponentsModule,
-        TranslateModule
+        TranslateModule,
+        FontAwesomeModule
     ]
 })
 export class ProjectsDetailModule {}

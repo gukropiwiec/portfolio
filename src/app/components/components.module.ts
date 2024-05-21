@@ -16,6 +16,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardTechnologiesComponent } from './card-technologies/card-technologies.component';
 import { TechItemComponent } from './tech-item/tech-item.component';
+import { ExternalProjectIconComponent } from './external-project-icon/external-project-icon.component';
 
 const moduleComponents = [
     CarouselComponent,
@@ -29,7 +30,8 @@ const moduleComponents = [
     NavbarComponent,
     FooterComponent,
     CardTechnologiesComponent,
-    TechItemComponent
+    TechItemComponent,
+    ExternalProjectIconComponent
 ];
 
 @NgModule({
