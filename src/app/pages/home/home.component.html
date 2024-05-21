@@ -1,42 +1,54 @@
 <div class="container justify-content-center">
     <!-- INTRO SECTION -->
-    <section id="section-intro">
-        <app-section-intro></app-section-intro>
-    </section>
+    <div class="fade-in-scroll" #fadeInElement>
+        <section id="section-intro">
+            <app-section-intro></app-section-intro>
+        </section>
+    </div>
     <!-- PROJECTS SECTION -->
-    <section id="section-projects" class="mt-2 section">
-        <h1 class="border-bottom cursor-pointer text-clicable" [routerLink]="['/projects']">
-            <div class="mb-2">
-                <img src="assets/icons/project-30.png" class="section-title-icon"> 
-                {{ 'Projects' | translate }} - {{ 'See all' | translate }} 
-                <fa-icon [icon]="faArrowAltCircleRight"></fa-icon>
-            </div>
-        </h1>
-        <app-section-projects></app-section-projects>
-    </section>
+    <div class="fade-in-scroll" #fadeInElement>
+        <section id="section-projects" class="mt-2 section">
+            <h1 class="border-bottom cursor-pointer text-clicable" [routerLink]="['/projects']">
+                <div class="mb-2">
+                    <img src="assets/icons/project-30.png" class="section-title-icon"> 
+                    {{ 'Projects' | translate }} - {{ 'See all' | translate }} 
+                    <fa-icon [icon]="faArrowAltCircleRight"></fa-icon>
+                </div>
+            </h1>
+            <app-section-projects></app-section-projects>
+        </section>
+    </div>
     <!-- SKILLS SECTION -->
-    <section id="section-skills" class="mt-2 section">
-        <h1 class="border-bottom">
-            <img src="assets/icons/skills-30.png" class="section-title-icon"> 
-            {{ 'My Skills' | translate }}
-        </h1>
-        <app-section-skills></app-section-skills>
-    </section>
+    <div class="fade-in-scroll" #fadeInElement>
+        <section id="section-skills" class="mt-2 section">
+            <h1 class="border-bottom">
+                <img src="assets/icons/skills-30.png" class="section-title-icon"> 
+                {{ 'My Skills' | translate }}
+            </h1>
+            <app-section-skills></app-section-skills>
+        </section>
+    </div>
     <!-- ABOUT SECTION -->
-    <section id="section-about" class="mt-2 section">
-        <h1 class="border-bottom">
-            <img src="assets/icons/about-30.png" class="section-title-icon"> 
-            {{ 'About' | translate }}
-        </h1>
-        <app-section-about></app-section-about>
-    </section>
+    <div class="fade-in-scroll" #fadeInElement>
+        <section id="section-about" class="mt-2 section">
+            <h1 class="border-bottom">
+                <img src="assets/icons/about-30.png" class="section-title-icon"> 
+                {{ 'About' | translate }}
+            </h1>
+            <app-section-about></app-section-about>
+        </section>
+    </div>
     <!-- CONTACT SECTION -->
-    <section id="section-contact" class="mt-2 section">
-        <h1 class="border-bottom">
-            <img src="assets/icons/contact-30.png" class="section-title-icon"> 
-            {{ 'Contact me!' | translate }}
-        </h1>
-        <app-section-contact></app-section-contact>
-    </section>
-    <app-footer></app-footer>
+    <div class="fade-in-scroll" #fadeInElement>
+        <section id="section-contact" class="mt-2 section">
+            <h1 class="border-bottom">
+                <img src="assets/icons/contact-30.png" class="section-title-icon"> 
+                {{ 'Contact me!' | translate }}
+            </h1>
+            <app-section-contact></app-section-contact>
+        </section>
+    </div>
+    <div class="fade-in-scroll" #fadeInElement>
+        <app-footer></app-footer>
+    </div>
 </div>

@@ -298,3 +298,14 @@ textarea {
         }
     }
 }
+
+
+// SCROLL OBSERVER
+.fade-in-scroll {
+    opacity: 0;
+    transition: opacity 1.1s ease-in-out;
+}
+  
+.fade-in-scroll.visible {
+    opacity: 1;
+}
