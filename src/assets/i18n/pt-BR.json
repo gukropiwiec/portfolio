@@ -27,13 +27,14 @@
         "Korp2": "Como estagiário, minha principal tarefa era escrever SQL queries e garantir a boa funcionalide do sistema.",
         "RPC1": "RPC é uma rede de televisão, sendo a maior afiliada da Rede Globo, tendo cobertura por todo o estado do Paraná.",
         "RPC2": "Minha principal responsabilidade é desenvolver novas aplicações e garantir a boa estabilidade dos sistemas da empresa, realizando deploys com serverless e criação de funções Lambda na AWS.",
-        "Reali1": "Atuação como desenvolvedor de software para criação de módulos no Odoo, para integração com os clientes da empresa."
+        "Reali1": "Atuação como desenvolvedor de software para criação de módulos no Odoo, para integração com os clientes da empresa.",
+        "THX1": "Sou responsável por melhor a qualidade de vida da equipe, ou seja, criar automações em tarefas repetitivas para manter o trabalho mais eficiente e organizado, o que da liberdade para eles focarem em atividades de maior valor."
     },
     "ProjectDetailDescription": {
         "esalflores": "Este projeto foi bastante desafiador, eu estava apenas iniciando minha carreira, então precisei me dedicar bastante para aprender sobre o <span class=\"text-angular fw-bold\">Angular</span>. <br><br> Alguns pontos que aprendi durante este projeto: <ul> <li>Segurança da informação</li> <li>Gestão de checkout</li> <li>Pagamentos on-line (Gateways de pagamento)</li> <li>Local storage para persistência temporária de algumas informações</li> <li>Detalhes do <span class=\"text-angular fw-bold\">Angular</span></li> <li>Backend usando <span class=\"text-laravel fw-bold\">Laravel</span></li> </ul> <br> O design do projeto foi desenvolvido por designers da empresa, fui encarregado de passar o design para o <span class=\"text-angular fw-bold\">Angular</span>.",
         "orion": "Atuação como Frontend no desenvolvimento do novo sistema de telefonia PBX utilizando <span class=\"text-angular fw-bold\">Angular</span> com <span class=\"text-bootstrap fw-bold\">Bootstrap</span>. Neste projeto fui responsável por garantir a integração fluida entre <span class=\"fw-bold\">Frontend</span> e <span class=\"fw-bold\">Backend</span>, assim como a criação de novas telas e responsividade.",
         "esalcorp": "Este aplicativo corporativo foi desenvolvido para acompanhamento de entregas da empresa. Foi feita integração do aplicativo com o <span class=\"fw-bold\">ERP</span> da empresa para geração de informações automatizadas.<br><br>O aplicativo conta também com a parte de assinaturas do cliente que são salvas no <span class=\"fw-bold\">Google Cloud Storage</span>.",
-        "esalpet": "",
+        "esalpet": "Site criado a partir do projeto Esalflores. No momento está desativado.",
         "currency-exchange-app": "",
         "realtime-chat-app": "",
         "planting-trees": "",
