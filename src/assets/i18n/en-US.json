@@ -9,13 +9,14 @@
         "Korp2": "As an intern, my main task was to build SQL queries and guarantee the good functionality of the program.",
         "RPC1": "RPC is a television network, being the largest affiliate of Rede Globo, covering the entire state of Paraná.",
         "RPC2": "My main responsibility is to develop new applications and ensure the stability of the company's systems, performing serverless deployments and creating Lambda functions on AWS.",
-        "Reali1": "Acting as a software developer to create modules in Odoo, for integration with the company's customers."
+        "Reali1": "Acting as a software developer to create modules in Odoo, for integration with the company's customers.",
+        "THX1": "I am responsible for enhancing the team's quality of life by creating automations for repetitive tasks, making work more efficient and organized. This allows them the freedom to focus on higher-value activities."
     },
     "ProjectDetailDescription": {
         "esalflores": "This project was quite challenging, I was just starting my career, so I needed to dedicate myself a lot to learning about  <span class=\"text-angular fw-bold\">Angular</span>. <br><br> Some points I learned during this project: <ul> <li>Website security</li> <li>Checkout management</li> <li>On-line payments (payment gateways)</li> <li>Local storage for temporary persistence of some information</li> <li><span class=\"text-angular fw-bold\">Angular</span> details</li> <li>Backend using <span class=\"text-laravel fw-bold\">Laravel</span></li> </ul> <br> The project design was developed by the company's designers, I was tasked with transferring the design to <span class=\"text-angular fw-bold\">Angular</span>.",
         "orion": "Acting as Frontend in the development of the new PBX telephone system using <span class=\"text-angular fw-bold\">Angular</span> with <span class=\"text-bootstrap fw-bold\">Bootstrap</span>. In this project I was responsible for ensuring fluid integration between <span class=\"fw-bold\">Frontend</span> and <span class=\"fw-bold\">Backend</span>, as well as creating of new screens and responsiveness.",
         "esalcorp": "This corporate application was developed to track company deliveries. The application was integrated with the company's <span class=\"fw-bold\">ERP</span> to generate automated information.<br><br>The application also includes customer signatures that are saved in <span class=\"fw-bold\">Google Cloud Storage</span>.",
-        "esalpet": "",
+        "esalpet": "Website created from the Esalflores project. It is currently disabled.",
         "currency-exchange-app": "",
         "realtime-chat-app": "",
         "planting-trees": "",

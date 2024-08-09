@@ -1,7 +1,14 @@
 <ul class="timeline">
+    <li class="my-3 event cursor-pointer" data-date="2024" (click)="openWorkDetail('work-detail6', 'chevron6')">
+        <span class="expand-detail-icon"><fa-icon [icon]="faChevronCircleDown" id="chevron6"></fa-icon></span>
+        <span class="text-purple">{{ 'Software Developer' | translate }}</span> {{ 'at' | translate }} <span class="text-black fw-bolder">THX Group</span> ({{ 'July' | translate }} 2024 - {{ 'Present' | translate }})
+        <ul class="d-none work-description mt-2" id="work-detail6">
+            <li>{{ 'AboutDescription.THX1' | translate }}</li>
+        </ul>
+    </li>
     <li class="my-3 event cursor-pointer" data-date="2024" (click)="openWorkDetail('work-detail5', 'chevron5')">
         <span class="expand-detail-icon"><fa-icon [icon]="faChevronCircleDown" id="chevron5"></fa-icon></span>
-        <span class="text-purple">{{ 'Software Developer' | translate }}</span> {{ 'at' | translate }} <span class="text-reali">Reali Tech</span> ({{ 'January' | translate }} 2024 - {{ 'Present' | translate}})
+        <span class="text-purple">{{ 'Freelancer' | translate }}</span> {{ 'at' | translate }} <span class="text-reali">Reali Tech</span> (2024)
         <ul class="d-none work-description mt-2" id="work-detail5">
             <li>{{ 'AboutDescription.Reali1' | translate }}</li>
         </ul>
