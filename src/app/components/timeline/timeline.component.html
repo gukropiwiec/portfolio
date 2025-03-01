@@ -1,4 +1,12 @@
 <ul class="timeline">
+    <li class="my-3 event cursor-pointer" data-date="2025" (click)="openWorkDetail('work-detail7', 'chevron7')">
+        <span class="expand-detail-icon"><fa-icon [icon]="faChevronCircleDown" id="chevron7"></fa-icon></span>
+        <span class="text-purple">{{ 'Fullstack Developer' | translate }}</span> {{ 'at' | translate }} <span class="text-bairesdev fw-bolder">BairesDev</span> ({{ 'February' | translate }} 2025 - {{ 'Present' | translate }})
+        <ul class="d-none work-description mt-2" id="work-detail7">
+            <li>{{ 'AboutDescription.BairesDev1' | translate }}</li>
+            <li [innerHTML]="'AboutDescription.BairesDev2' | translate"></li>
+        </ul>
+    </li>
     <li class="my-3 event cursor-pointer" data-date="2024" (click)="openWorkDetail('work-detail6', 'chevron6')">
         <span class="expand-detail-icon"><fa-icon [icon]="faChevronCircleDown" id="chevron6"></fa-icon></span>
         <span class="text-purple">{{ 'Software Developer' | translate }}</span> {{ 'at' | translate }} <span class="text-black fw-bolder">THX Group</span> ({{ 'July' | translate }} 2024 - {{ 'Present' | translate }})

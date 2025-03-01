@@ -10,7 +10,9 @@
         "RPC1": "RPC is a television network, being the largest affiliate of Rede Globo, covering the entire state of Paraná.",
         "RPC2": "My main responsibility is to develop new applications and ensure the stability of the company's systems, performing serverless deployments and creating Lambda functions on AWS.",
         "Reali1": "Acting as a software developer to create modules in Odoo, for integration with the company's customers.",
-        "THX1": "I am responsible for enhancing the team's quality of life by creating automations for repetitive tasks, making work more efficient and organized. This allows them the freedom to focus on higher-value activities."
+        "THX1": "I am responsible for enhancing the team's quality of life by creating automations for repetitive tasks, making work more efficient and organized. This allows them the freedom to focus on higher-value activities.",
+        "BairesDev1": "I am responsible for developing new features and fixing bugs, always ensuring clean, well-structured, and high-performance code.",
+        "BairesDev2": "This is my first experience working entirely in <b>English</b>, attending meetings, collaborating with the team, and handling technical documentation in the language. It has been a great opportunity to improve my communication skills and adapt to an international environment."
     },
     "ProjectDetailDescription": {
         "esalflores": "This project was quite challenging, I was just starting my career, so I needed to dedicate myself a lot to learning about  <span class=\"text-angular fw-bold\">Angular</span>. <br><br> Some points I learned during this project: <ul> <li>Website security</li> <li>Checkout management</li> <li>On-line payments (payment gateways)</li> <li>Local storage for temporary persistence of some information</li> <li><span class=\"text-angular fw-bold\">Angular</span> details</li> <li>Backend using <span class=\"text-laravel fw-bold\">Laravel</span></li> </ul> <br> The project design was developed by the company's designers, I was tasked with transferring the design to <span class=\"text-angular fw-bold\">Angular</span>.",
