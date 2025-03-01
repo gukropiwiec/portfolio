@@ -11,11 +11,13 @@
     "at": "na",
     "Frontend Developer": "Desenvolvedor Web Pleno",
     "Fullstack Web Developer": "Desenvolvedor Web Fullstack",
+    "Fullstack Developer": "Desenvolvedor Fullstack",
     "Junior Developer": "Desenvolvedor Júnior",
     "January": "Janeiro",
     "May": "Maio",
     "August": "Agosto",
     "November": "Novembro",
+    "February": "Fevereiro",
     "Present": "Hoje",
     "AboutDescription": {
         "summary": "Sou desenvolvedor web full-stack, com mais de 5 anos de experiência em desenvolvimento. Atuei no desenvolvimento do e-commerce de uma grande floricultura que contém milhares de visitar diárias, além do desenvolvimento de aplicações utilizando <span class=\"fw-bold text-angular\">Angular</span>, <span class=\"fw-bold\">NextJS</span>, <span class=\"fw-bold text-laravel\">Laravel</span>, <span class=\"fw-bold text-python\">Python</span> e <span class=\"fw-bold text-aws\">AWS</span>, e de aplicativos utilizando <span class=\"fw-bold text-ionic\">Ionic</span>. <br><br> Atualmente estou trabalhando em projetos utilizando <span class=\"fw-bold text-angular\">Angular</span> e <span class=\"fw-bold text-python\">Python</span>. <br> Gosto muito de estar atualizado e sempre buscando novos desafios e aprendizados.",
@@ -28,7 +30,9 @@
         "RPC1": "RPC é uma rede de televisão, sendo a maior afiliada da Rede Globo, tendo cobertura por todo o estado do Paraná.",
         "RPC2": "Minha principal responsabilidade é desenvolver novas aplicações e garantir a boa estabilidade dos sistemas da empresa, realizando deploys com serverless e criação de funções Lambda na AWS.",
         "Reali1": "Atuação como desenvolvedor de software para criação de módulos no Odoo, para integração com os clientes da empresa.",
-        "THX1": "Sou responsável por melhor a qualidade de vida da equipe, ou seja, criar automações em tarefas repetitivas para manter o trabalho mais eficiente e organizado, o que da liberdade para eles focarem em atividades de maior valor."
+        "THX1": "Sou responsável por melhor a qualidade de vida da equipe, ou seja, criar automações em tarefas repetitivas para manter o trabalho mais eficiente e organizado, o que da liberdade para eles focarem em atividades de maior valor.",
+        "BairesDev1": "Sou responsável pelo desenvolvimento de novas funcionalidades e pela correção de bugs, sempre garantindo um código claro, bem estruturado e com alto desempenho.",
+        "BairesDev2": "Esta é minha primeira experiência trabalhando totalmente em <b>inglês</b>, participando de reuniões, colaborando com a equipe e lidando com documentação técnica no idioma. Tem sido uma ótima oportunidade para aprimorar minhas habilidades de comunicação e adaptação a um ambiente internacional."
     },
     "ProjectDetailDescription": {
         "esalflores": "Este projeto foi bastante desafiador, eu estava apenas iniciando minha carreira, então precisei me dedicar bastante para aprender sobre o <span class=\"text-angular fw-bold\">Angular</span>. <br><br> Alguns pontos que aprendi durante este projeto: <ul> <li>Segurança da informação</li> <li>Gestão de checkout</li> <li>Pagamentos on-line (Gateways de pagamento)</li> <li>Local storage para persistência temporária de algumas informações</li> <li>Detalhes do <span class=\"text-angular fw-bold\">Angular</span></li> <li>Backend usando <span class=\"text-laravel fw-bold\">Laravel</span></li> </ul> <br> O design do projeto foi desenvolvido por designers da empresa, fui encarregado de passar o design para o <span class=\"text-angular fw-bold\">Angular</span>.",

@@ -39,6 +39,7 @@
     --aws: #ec912d;
     --sql: #eab55b;
     --reali: #1982e8;
+    --bairesdev: #f66135;
 }
 
 .container {
@@ -167,6 +168,10 @@ li {
 
 .text-reali {
     color: var(--reali);
+}
+
+.text-bairesdev {
+    color: var(--bairesdev);
 }
 
 .nav-left,
